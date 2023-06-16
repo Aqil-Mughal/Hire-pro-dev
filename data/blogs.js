@@ -100,6 +100,7 @@ module.exports = [
     blogText: `A job ravenously while Far much that one rank beheld after outside....`,
   },
   // home 10 blog
+  
   {
     id: 11,
     img: "/images/resource/blog/2.jpg",

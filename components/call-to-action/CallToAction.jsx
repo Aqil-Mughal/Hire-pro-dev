@@ -10,7 +10,7 @@ const CallToAction = () => {
               Aamnato always try to provide the best Business Solutions for<br /> 
               Clients to grow up their Business sharply and smoothly.
               </div>
-              <a href="#" className="theme-btn btn-style-one bg-blue">
+              <a href="#" className="theme-btn btn-style-one bg-blue" style={{backgroundColor:"#1F9747"}}>
                 <span className="btn-title">Contact us Today</span>
               </a>
             </div>

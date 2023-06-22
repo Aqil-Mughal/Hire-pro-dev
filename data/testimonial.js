@@ -6,6 +6,7 @@ module.exports = [
     avatar: "/images/resource/testi-thumb-1.png",
     name: "Nicole Wells",
     designation: "Web Developer",
+    
   },
   {
     id: 2,

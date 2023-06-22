@@ -38,7 +38,7 @@ const JobFeatured7 = () => {
             </div>
             <ul className="job-other-info">
               {item.jobType.slice(0, 1).map((val, i) => (
-                <li key={i} className={`${val.styleClass}`}>
+                <li key={i} className={`${val.styleClass}`} style={{backgroundColor:"#E1F2E5",color:"#3AAB58"}}>
                   {val.type}
                 </li>
               ))}
@@ -46,8 +46,9 @@ const JobFeatured7 = () => {
             <Link
               href={`/job-single-v5/${item.id}`}
               className="theme-btn btn-style-eight"
+              style={{backgroundColor:"#1F9747",color:"white"}}
             >
-              Apply Job
+              Apply Now
             </Link>
           </div>
         </div>

@@ -31,7 +31,7 @@ const About11 = () => {
         <figure className="image-box" data-aos="fade-right">
           <img src="images/resource/meeting2.png" alt="resource" style={{width:"60%"}}/>
           <div className="corner-image" style={{ position: "absolute", top: "-55px",right: "650px",width: "100px", height: "150px" }}>
-          <img src="images/resource/Group21.png" alt="corner-image" style={{width:"100px",height:"100px"}} />
+          <img src="images/resource/Group40.png" alt="corner-image" style={{width:"100px",height:"100px"}} />
         </div>
         </figure>
 

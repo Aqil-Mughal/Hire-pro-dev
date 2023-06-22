@@ -10,7 +10,7 @@ const RegBanner2 = () => {
       bannerClass: "banner-style-one",
       buttonLabel: "Hiring Form",
       buttonLink: "/hiring-form",
-      backgroundColor: "#6BA2ED",
+      backgroundColor: "#1F9097",
       buttonFontColor: "#747474",
     },
     {
@@ -22,7 +22,7 @@ const RegBanner2 = () => {
       buttonLabel: "Submit Resume",
       buttonLink: "/submit-resume",
       buttonFontColor: "#747474",
-      backgroundColor: "#FFCE64",
+      backgroundColor: "#5B1F97",
       
     },
   ];

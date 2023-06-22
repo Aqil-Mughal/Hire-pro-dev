@@ -66,7 +66,7 @@ const index = () => {
       </section>
       {/* <!--End Page Title--> */}
       <section className="work-section style-two">
-        <div className="auto-container">
+        <div className="auto-container" style={{backgroundColor:"#ECFFF2"}}>
           <div className="sec-title text-center">
             <h2>Our Commitment to Excellence</h2>
             <div className="text" style={{ fontSize: "15px", color: "#959595" }}>
@@ -103,8 +103,8 @@ const index = () => {
       <section className="job-categories">
         <div className="auto-container">
           <div className="sec-title text-center">
-            <h2 style={{color:"#1967D2"}}>Popular Job Categories</h2>
-            <div className="text" style={{color:"#1967D2"}}>2020 jobs live - 293 added today.</div>
+            <h2 style={{color:"#1F9747"}}>Popular Job Categories</h2>
+            <div className="text" style={{color:"#1F9747"}}>2020 jobs live - 293 added today.</div>
           </div>
 
           <div className="row" data-aos="fade-up">

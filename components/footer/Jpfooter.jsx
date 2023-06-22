@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const index = ({ footerStyle = "" }) => {
   return (
-    <footer className={`main-footer ${footerStyle}`} style={{borderTop: "1px solid #D5D5D5",backgroundColor:"#1967D2"}}>
+    <footer className={`main-footer ${footerStyle}`} style={{borderTop: "1px solid #D5D5D5",backgroundColor:"#1F9747"}}>
       <div className="auto-container">
         <div className="widgets-section" data-aos="fade-up">
           <div className="row">

@@ -31,7 +31,7 @@ const About10 = () => {
                   </div>
                 </div>
                 <div style={{display:"flex",justifyContent:"center"}}>
-                <a href="#" className="theme-btn -blue-outline mt-56 md:mt-16" style={{ backgroundColor: "#1967D2", color: "white" ,display:"flex",width:"50%",justifyContent:"center"}}>
+                <a href="#" className="theme-btn -blue-outline mt-56 md:mt-16" style={{ backgroundColor: "#1F9747", color: "white" ,display:"flex",width:"50%",justifyContent:"center",border:"none"}}>
                   Check Our Services
                 </a>
                 </div>

@@ -19,7 +19,7 @@ const Block3 = () => {
               Staffing website is committed to delivering exceptional 
               business solutions that enable our clients to achieve rapid and seamless growth. 
               </div>
-              <Link href="/login" className="theme-btn btn-style-one">
+              <Link href="/login" className="theme-btn btn-style-one" style={{backgroundColor:"#1F9747"}}>
                 Check New Job
               </Link>
             </div>

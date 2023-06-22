@@ -30,7 +30,7 @@ const About20 = () => {
         <figure className="image-box" data-aos="fade-right">
           <img src="images/resource/Training3.png" alt="resource"style={{width:"60%"}} />
           <div className="corner-image" style={{ position: "absolute", top: "-50px",left: "57%",width: "100px", height: "150px" }}>
-            <img src="images/resource/Group21.png" alt="corner-image" style={{width:"100px",height:"100px"}} />
+            <img src="images/resource/Group40.png" alt="corner-image" style={{width:"100px",height:"100px"}} />
           </div>
         </figure>
 

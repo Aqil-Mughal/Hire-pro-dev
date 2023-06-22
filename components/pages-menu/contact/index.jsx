@@ -29,7 +29,7 @@ const index = () => {
       <section className="contact-section" style={{ border: "1px", backgroundColor: "#CFDBE4", }}>
         <div className="auto-container" >
           {/* <!-- Contact Form --> */}
-          <div className="contact-form default-form" style={{ backgroundColor: "white", borderRight:"300px solid #1967D2"}}>
+          <div className="contact-form default-form" style={{ backgroundColor: "white", borderRight:"300px solid #1F9747"}}>
             <div style={{ display: "flex",}}>
               <div style={{ width: "100%", }}>
                 <h3 style={{ fontSize: "40px" }}>Get In <span style={{ color: "#1967D2" }}>Touch</span></h3>

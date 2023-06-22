@@ -63,7 +63,7 @@ const ContactForm = () => {
             type="submit"
             id="submit"
             name="submit-form"
-
+            style={{backgroundColor:"#1F9747"}}
           >
             Send
           </button>

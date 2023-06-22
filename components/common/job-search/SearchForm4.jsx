@@ -37,6 +37,7 @@ const SearchForm4 = () => {
         {/* <!-- Form Group --> */}
         <div className="form-group col-lg-2 col-md-12 col-sm-12 text-right">
           <button
+          style={{backgroundColor:"#1F9747"}}
             type="submit"
             className="theme-btn btn-style-two"
             onClick={() => Router.push("/job-list-v6")}

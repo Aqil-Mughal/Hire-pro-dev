@@ -5,7 +5,7 @@ module.exports = [
     catTitle: "Shipping / Receiving",
     jobNumber: "2",
     image:"/images/icons/shipping.png",
-    images:"/images/icons/vector.png"
+    images:"/images/icons/arrow.png"
 
   },
   {
@@ -14,15 +14,15 @@ module.exports = [
     catTitle: "Order Picking",
     jobNumber: "86",
     image:"/images/icons/order.png",
-    images:"/images/icons/vector.png"
+    images:"/images/icons/arrow.png"
   },
   { 
     id: 3, 
-    // icon: "flaticon-vector",
+    // icon: "flaticon-arrow",
     catTitle: "Design", 
     jobNumber: "43",
     image:"/images/icons/manfacturing.png",
-    images:"/images/icons/vector.png"
+    images:"/images/icons/arrow.png"
 
   },
   {
@@ -31,7 +31,7 @@ module.exports = [
     catTitle: "Forklift Operator",
     jobNumber: "12",
     image:"/images/icons/forklift.png",
-    images:"/images/icons/vector.png"
+    images:"/images/icons/arrow.png"
   },
   {
     id: 5,
@@ -39,7 +39,7 @@ module.exports = [
     catTitle: "Skilled Laboure",
     jobNumber: "55",
     image:"/images/icons/skilled.png",
-    images:"/images/icons/vector.png"
+    images:"/images/icons/arrow.png"
   },
   {
     id: 6,
@@ -47,7 +47,7 @@ module.exports = [
     catTitle: "Food & Beverage",
     jobNumber: "2",
     image:"/images/icons/food.png",
-    images:"/images/icons/vector.png"
+    images:"/images/icons/arrow.png"
   },
   {
     id: 7,
@@ -55,7 +55,7 @@ module.exports = [
     catTitle: "Sorting",
     jobNumber: "2",
     image:"/images/icons/sort.png",
-    images:"/images/icons/vector.png"
+    images:"/images/icons/arrow.png"
   },
   {
     id: 8,
@@ -63,7 +63,7 @@ module.exports = [
     catTitle: "Packaging",
     jobNumber: "25",
     image:"/images/icons/packaging.png",
-    images:"/images/icons/vector.png"
+    images:"/images/icons/arrow.png"
   },
   {
     id: 9,
@@ -71,7 +71,7 @@ module.exports = [
     catTitle: "Inventory Taking",
     jobNumber: "92",
     image:"/images/icons/inventor.png",
-    images:"/images/icons/vector.png"
+    images:"/images/icons/arrow.png"
   },
   {
     id: 10,
@@ -79,7 +79,7 @@ module.exports = [
     catTitle: "Press Operating",
     jobNumber: "92",
     image:"/images/icons/press.png",
-    images:"/images/icons/vector.png"
+    images:"/images/icons/arrow.png"
   },
   {
     id: 11,
@@ -87,7 +87,7 @@ module.exports = [
     catTitle: "Light Assembly Work",
     jobNumber: "92",
     image:"/images/icons/light.png",
-    images:"/images/icons/vector.png"
+    images:"/images/icons/arrow.png"
   },
   {
     id: 12,
@@ -95,7 +95,7 @@ module.exports = [
     catTitle: "Welders",
     jobNumber: "92",
     image:"/images/icons/welders.png",
-    images:"/images/icons/vector.png"
+    images:"/images/icons/arrow.png"
   },
   {
     id: 13,
@@ -103,7 +103,7 @@ module.exports = [
     catTitle: "Drivers (AZ, DZ etc)",
     jobNumber: "92",
     image:"/images/icons/drivers.png",
-    images:"/images/icons/vector.png"
+    images:"/images/icons/arrow.png"
   },
   {
     id: 14,
@@ -111,7 +111,7 @@ module.exports = [
     catTitle: "Clerical Help",
     jobNumber: "92",
     image:"/images/icons/help.png",
-    images:"/images/icons/vector.png"
+    images:"/images/icons/arrow.png"
 
   },
 

@@ -25,7 +25,7 @@ const index = () => {
       {/* End MobileMenu */}
       <section
       className="banner-section-nine"
-      style={{ backgroundImage: "url(images/background/7.jpg)",width:"100%"}}
+      style={{ backgroundImage: "url(images/background/7.png)",width:"100%"}}
     >
       <div className="auto-container"style={{height:"30vh"}}>
         <div className="cotnent-box">

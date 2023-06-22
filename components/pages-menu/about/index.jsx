@@ -114,7 +114,7 @@ const index = () => {
       </section>
       <section
         className="testimonial-section style-two alternate"
-        style={{ backgroundImage: "url(images/background/9.png)" }}
+        style={{ backgroundImage: "url(images/background/maintest1.png)" }}
       >
         <div className="auto-container">
           {/* <!-- Sec Title --> */}

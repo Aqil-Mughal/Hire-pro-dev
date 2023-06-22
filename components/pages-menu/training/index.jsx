@@ -109,7 +109,7 @@ const index = () => {
                 </div>
 
             </section>
-            <section style={{ backgroundImage: "url(images/background/7.jpg)", height: "40vh", padding: "50px", display: "flex", justifyContent: "center" }}>
+            <section style={{ backgroundImage: "url(images/background/section7.png)", height: "60vh", padding: "50px", display: "flex", justifyContent: "center" }}>
                 <div style={{ color: "white", margin: "auto", width: "60%", textAlign: "center",fontSize:"25px",lineHeight:"30px" }}>
                 It's important for both the staffing agency and the temporary worker to communicate about
                  the level of training required for the specific job role. Temporary workers should also ask 

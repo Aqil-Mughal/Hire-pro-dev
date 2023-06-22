@@ -6,7 +6,7 @@ const Block3 = () => {
       <div className="outer-box">
         <div className="image-column">
           <figure className="image">
-            <img src="images/resource/recruiter.png" alt="resource about" />
+            <img src="images/resource/image6.png" style={{borderRadius:"none"}} alt="resource about" />
           </figure>
         </div>
         {/* End image-column */}
@@ -14,14 +14,13 @@ const Block3 = () => {
         <div className="content-column">
           <div className="inner-column" data-aos="fade-up">
             <div className="sec-title">
-              <h2>I am Recruiter</h2>
+              <h2>Need a job?</h2>
               <div className="text">
-                One of our One of our jobs has some kind of flexibility jobs has
-                some kind of flexibility option such as telecommuting, a
-                part-time schedule or a flexible or flextime.
+              Staffing website is committed to delivering exceptional 
+              business solutions that enable our clients to achieve rapid and seamless growth. 
               </div>
               <Link href="/login" className="theme-btn btn-style-one">
-                Post New Job
+                Check New Job
               </Link>
             </div>
           </div>

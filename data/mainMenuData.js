@@ -390,7 +390,7 @@ export const employersItems = [
     },
     {
         name: "Employer FAQ's",
-        routePath: "/pricing",
+        routePath: "/faq",
     },
     {
         name: "Temporary / Contract Employment for Employers",
@@ -401,15 +401,23 @@ export const employersItems = [
 export const servicesItems = [
     {
         name: "Employment",
-        routePath: "/about",
+        routePath: "/employment",
     },
     {
         name: "Trainings",
-        routePath: "/pricing",
+        routePath: "/training",
     }
 ]
 
 export const aboutUsItems = [
+    {
+        name: "Employment",
+        routePath: "/employment",
+    },
+    {
+        name: "Trainings",
+        routePath: "/training",
+    },
     {
         name: "Why Choose Us",
         routePath: "/about",

@@ -15,8 +15,8 @@ const CallToAction5 = () => {
         </div>
 
         <div className="btn-box">
-          <Link href="/register" className="theme-btn btn-style-three">
-            Create an Account
+          <Link href="/submit-your-resume" className="theme-btn btn-style-three">
+            Submit Your Resume
           </Link>
         </div>
       </div>

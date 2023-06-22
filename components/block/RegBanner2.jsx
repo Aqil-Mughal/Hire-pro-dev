@@ -5,18 +5,25 @@ const RegBanner2 = () => {
     {
       id: 1,
       name: "Employers",
-      text: ` Sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-            incididunt. Labore et dolore nostrud exercitation.`,
+      text: ` Employers actively evaluate and identify the most suitable candidate to meet the organization's needs and contribute to its success.`,
       avatar: "images/resource/employ.png",
       bannerClass: "banner-style-one",
+      buttonLabel: "Hiring Form",
+      buttonLink: "/hiring-form",
+      backgroundColor: "#6BA2ED",
+      buttonFontColor: "#747474",
     },
     {
       id: 2,
       name: "Candidate",
-      text: ` Sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-            incididunt. Labore et dolore nostrud exercitation.`,
+      text: `Candidates have the opportunity to secure a job by successfully navigating the hiring process and impressing the employer.`,
       avatar: "images/resource/candidate.png",
       bannerClass: "banner-style-two",
+      buttonLabel: "Submit Resume",
+      buttonLink: "/submit-resume",
+      buttonFontColor: "#747474",
+      backgroundColor: "#FFCE64",
+      
     },
   ];
   return (
@@ -25,14 +32,16 @@ const RegBanner2 = () => {
         <div
           className={`${item.bannerClass} -type-2 col-lg-6 col-md-12 col-sm-12`}
           key={item.id}
+         
         >
-          <div className="inner-box">
+          <div className="inner-box" style={{ backgroundColor: item.backgroundColor }}>
             <div className="content">
               <h3>{item.name}</h3>
               <p>{item.text}</p>
-              <Link href="/register" className="theme-btn btn-style-five">
-                Register Account
+              <Link href={item.buttonLink} className="theme-btn btn-style-five"style={{ color: item.buttonFontColor }}>
+              {item.buttonLabel}
               </Link>
+              
             </div>
             <figure className="image">
               <img src={item.avatar} alt="resource" />

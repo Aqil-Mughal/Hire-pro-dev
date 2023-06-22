@@ -330,7 +330,7 @@ const HeaderNavContent = () => {
                     </li> */}
                     {/* End Pages menu items */}
 
-                    <li className={`${isActiveLink('/home', router.asPath) ? "current " : ""}`}>
+                    <li className={`${isActiveLink('/home-9', router.asPath) ? "current " : ""}`}>
                         <span>Home</span>
                     </li>
 
@@ -366,21 +366,7 @@ const HeaderNavContent = () => {
                         </ul>
                     </li>
 
-                    <li className={`${isActiveParentChaild(servicesItems, router.asPath) ? "current " : ""} dropdown`}>
-                        <span>Services</span>
-                        <ul>
-                            {servicesItems.map((item, i) => (
-                                <li
-                                    className={
-                                        isActiveLink(item.routePath, router.asPath) ? "current" : ""
-                                    }
-                                    key={i}
-                                >
-                                    <Link href={item.routePath}>{item.name}</Link>
-                                </li>
-                            ))}
-                        </ul>
-                    </li>
+                    
 
                     <li className={`${isActiveParentChaild(servicesItems, router.asPath) ? "current " : ""} dropdown`}>
                         <span>About us</span>
@@ -398,9 +384,8 @@ const HeaderNavContent = () => {
                         </ul>
                     </li>
 
-                    <li className={`${isActiveLink('/home', router.asPath) ? "current " : ""}`}>
-                        <span>Contact</span>
-                    </li>
+                    
+                    <li><Link href={'/contact'}>Contact</Link></li>
 
                 </ul>
             </nav>
@@ -409,3 +394,19 @@ const HeaderNavContent = () => {
 };
 
 export default HeaderNavContent;
+
+// <li className={`${isActiveParentChaild(servicesItems, router.asPath) ? "current " : ""} dropdown`}>
+//                         <span>Services</span>
+//                         <ul>
+//                             {servicesItems.map((item, i) => (
+//                                 <li
+//                                     className={
+//                                         isActiveLink(item.routePath, router.asPath) ? "current" : ""
+//                                     }
+//                                     key={i}
+//                                 >
+//                                     <Link href={item.routePath}>{item.name}</Link>
+//                                 </li>
+//                             ))}
+//                         </ul>
+//                     </li>

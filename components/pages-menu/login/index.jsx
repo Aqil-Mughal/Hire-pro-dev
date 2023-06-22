@@ -6,7 +6,7 @@ import Header from "./Header";
 const index = () => {
   return (
     <>
-      <Header />
+      
       {/* <!--End Main Header -->  */}
 
       <LoginPopup />
@@ -18,7 +18,7 @@ const index = () => {
       <div className="login-section">
         <div
           className="image-layer"
-          style={{ backgroundImage: "url(images/background/12.jpg)" }}
+          style={{ backgroundImage: "url(images/background/loginimage.png)" }}
         ></div>
         <div className="outer-box">
           {/* <!-- Login Form --> */}
@@ -34,3 +34,6 @@ const index = () => {
 };
 
 export default index;
+
+
+// <Header />

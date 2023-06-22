@@ -28,7 +28,7 @@ const index = () => {
 
       <section className="layout-pt-120 layout-pb-60 border-bottom-none">
         <div className="bg-shape -bottom -right js-rellax">
-          <img src="images/index-11/shapes/1.png" alt="image" />
+         <img src="images/index-11/shapes/1.png" alt="image" />
         </div>
         {/* End bg-shape */}
 

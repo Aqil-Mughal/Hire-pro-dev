@@ -41,30 +41,7 @@ const Funfact = () => {
           data-aos-delay={val.animationDelay}
           key={val.id}
         >
-          <div className="count-box">
-            <span className="count-text">
-              <CountUp
-                start={focus ? val.startCount : null}
-                end={val.endCount}
-                duration={2}
-              >
-                {({ countUpRef }) => (
-                  <InView
-                    as="span"
-                    onChange={(isVisible) => {
-                      if (isVisible) {
-                        setFocus(true);
-                      }
-                    }}
-                  >
-                    <span ref={countUpRef} />
-                  </InView>
-                )}
-              </CountUp>
-            </span>
-            {val.endPointText}
-          </div>
-          <h4 className="counter-title">{val.meta}</h4>
+         
         </div>
       ))}
     </>
@@ -72,3 +49,28 @@ const Funfact = () => {
 };
 
 export default Funfact;
+
+// <div className="count-box">
+//   <span className="count-text">
+//     <CountUp
+//       start={focus ? val.startCount : null}
+//       end={val.endCount}
+//       duration={2}
+//     >
+//       {({ countUpRef }) => (
+//         <InView
+//           as="span"
+//           onChange={(isVisible) => {
+//             if (isVisible) {
+//               setFocus(true);
+//             }
+//           }}
+//         >
+//           <span ref={countUpRef} />
+//         </InView>
+//       )}
+//     </CountUp>
+//   </span>
+//   {val.endPointText}
+// </div>
+// <h4 className="counter-title">{val.meta}</h4>

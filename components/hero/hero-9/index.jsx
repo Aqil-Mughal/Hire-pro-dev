@@ -10,7 +10,8 @@ const index = () => {
       <div className="auto-container">
         <div className="cotnent-box">
           <div className="title-box" data-aso-delay="300" data-aos="fade-up">
-            <h3>15,000+ Browse Jobs</h3>
+            <h3>Unlock Your Full Potential with Our Cutting-Edge 
+            Recruitment Solutions</h3>
             <div className="text">
               Find Jobs, Employment & Career Opportunities
             </div>

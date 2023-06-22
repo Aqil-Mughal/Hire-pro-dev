@@ -32,7 +32,7 @@ const index = () => {
           <div className="contact-form default-form" style={{ backgroundColor: "white", borderRight:"300px solid #1F9747"}}>
             <div style={{ display: "flex",}}>
               <div style={{ width: "100%", }}>
-                <h3 style={{ fontSize: "40px" }}>Get In <span style={{ color: "#1967D2" }}>Touch</span></h3>
+                <h3 style={{ fontSize: "40px" }}>Get In <span style={{ color: "#1F9747" }}>Touch</span></h3>
                 <p style={{ fontSize: "10px", color: "#202124", lineHeight: "20px" }}>
                   Enim tempor eget pharetra facilisis sed maecenas adipiscing.
                   Eu leo molestie vel, ornare non id blandit netus.</p>

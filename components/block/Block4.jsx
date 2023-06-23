@@ -15,9 +15,9 @@ const Block4 = () => {
         {/* End imag-column */}
 
         <div className="content-column">
-          <div className="inner-column wow fadeInUp">
+          <div className="inner-column fadeInUp">
             <div className="sec-title">
-              <h2>Need for talent acquisition?  </h2>
+              <h2>Need for talent acquisition?</h2>
               <div className="text">
                 Look no further. Our commitment is to swiftly find the perfect candidates for your needs,
                  providing you with peace of mind. With our daily recruitment efforts and rapid growth, 

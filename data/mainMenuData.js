@@ -1,4 +1,4 @@
-// export const homeItems = [
+export const homeItems = [
 //     {
 //         id: 1,
 //         items: [
@@ -24,9 +24,13 @@
 //             },
 //         ],
 //     },
-//     {
-//         id: 2,
-//         items: [
+    {
+        id: 2,
+        items: [
+            {
+                name: "Home",
+                routePath: "/home-9",
+            },
 //             {
 //                 name: "Home Page 06",
 //                 routePath: "/home-6",
@@ -40,15 +44,11 @@
 //                 routePath: "/home-8",
 //             },
 //             {
-//                 name: "Home Page 09",
-//                 routePath: "/home-9",
-//             },
-//             {
 //                 name: "Home Page 10",
 //                 routePath: "/home-10",
 //             },
-//         ],
-//     },
+        ],
+    },
 //     {
 //         id: 3,
 //         items: [
@@ -86,8 +86,8 @@
 //                 routePath: "/home-17",
 //             },
 //         ],
-//     },
-// ];
+    // },
+];
 
 export const findJobItems = [
     {
@@ -302,6 +302,7 @@ export const blogItems = [
 ];
 
 export const pageItems = [
+    
     {
         name: "About",
         routePath: "/about",
@@ -375,30 +376,34 @@ export const shopItems = [
 export const jobSeekersItems = [
     {
         name: "Search Jobs",
-        routePath: "/about",
+        routePath: "/search-jobs",
     },
     {
         name: "Submit Your Resume",
-        routePath: "/pricing",
+        routePath: "/submit-your-resume",
     }
 ]
 
 export const employersItems = [
     {
         name: "Hiring Form",
-        routePath: "/about",
+        routePath: "/hiring-form",
     },
     {
         name: "Employer FAQ's",
         routePath: "/faq",
     },
-    {
-        name: "Temporary / Contract Employment for Employers",
-        routePath: "/pricing",
-    }
+    // {
+    //     name: "Temporary / Contract Employment for Employers",
+    //     routePath: "/pricing",
+    // }
 ]
 
 export const servicesItems = [
+    {
+        name: "About ",
+        routePath: "/about",
+    },
     {
         name: "Employment",
         routePath: "/employment",
@@ -410,14 +415,7 @@ export const servicesItems = [
 ]
 
 export const aboutUsItems = [
-    {
-        name: "Employment",
-        routePath: "/employment",
-    },
-    {
-        name: "Trainings",
-        routePath: "/training",
-    },
+    
     {
         name: "Why Choose Us",
         routePath: "/about",

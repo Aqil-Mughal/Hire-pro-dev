@@ -25,6 +25,7 @@ import About9 from "../../about/About9";
 import About10 from "../../about/About10";
 import About12 from "../../about/About12";
 import About11 from "../../about/About11";
+import Header from "../../home-9/Header";
 import Testimonial4 from "../../testimonial/Testimonial4";
 import CallToAction from "../../call-to-action/CallToAction";
 
@@ -33,12 +34,11 @@ const index = () => {
   return (
     <>
       {/* <!-- Header Span --> */}
-      // <span className="header-span"></span>
 
       <LoginPopup />
       {/* End Login Popup Modal */}
 
-      <DefaulHeader />
+      <Header />
       {/* <!--End Main Header --> */}
 
       <MobileMenu />
@@ -46,9 +46,9 @@ const index = () => {
 
       <section
         className="banner-section-nine"
-        style={{ backgroundImage: "url(images/background/about.png)", }}
+        style={{ backgroundImage: "url(images/background/about.png)", marginTop:"5%" }}
       >
-        <div className="auto-container" style={{ height: "30vh" }}>
+        <div className="auto-container" style={{ height: "30vh",}}>
           <div className="cotnent-box">
             <div className="title-box" data-aso-delay="300" data-aos="fade-up">
               <h3>ABOUT AAMANTO TECHNOLOGIES</h3>

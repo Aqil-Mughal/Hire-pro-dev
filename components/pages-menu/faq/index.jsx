@@ -13,19 +13,19 @@ const index = () => {
   return (
     <>
       {/* <!-- Header Span --> */}
-      <span className="header-span"></span>
+      
 
       <LoginPopup />
       {/* End Login Popup Modal */}
 
-      <DefaulHeader />
+      <Header />
       {/* <!--End Main Header --> */}
 
       <MobileMenu />
       {/* End MobileMenu */}
       <section
       className="banner-section-nine"
-      style={{ backgroundImage: "url(images/background/7.png)",width:"100%"}}
+      style={{ backgroundImage: "url(images/background/7.png)",width:"100%",marginTop:"5%"}}
     >
       <div className="auto-container"style={{height:"30vh"}}>
         <div className="cotnent-box">

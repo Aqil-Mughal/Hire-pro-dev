@@ -3,7 +3,7 @@ import Partner from "../../common/partner/Partner";
 import FooterDefault from "../../footer/common-footer";
 import DefaulHeader from "../../header/DefaulHeader";
 import MobileMenu from "../../header/MobileMenu";
-
+import Header from "../../home-9/Header"
 import Block1 from "../../block/Block1";
 import Breadcrumb from "../../common/Breadcrumb";
 import JpFooter from "../../footer/Jpfooter"
@@ -29,12 +29,11 @@ const index = () => {
     return (
         <>
             {/* <!-- Header Span --> */}
-      // <span className="header-span"></span>
 
             <LoginPopup />
             {/* End Login Popup Modal */}
 
-            <DefaulHeader />
+            <Header />
             {/* <!--End Main Header --> */}
 
             <MobileMenu />
@@ -42,7 +41,7 @@ const index = () => {
 
             <section
                 className="banner-section-nine"
-                style={{ backgroundImage: "url(images/background/trainingbg.png)", }}
+                style={{ backgroundImage: "url(images/background/trainingbg.png)",marginTop:"5%"  }}
             >
                 <div className="auto-container" style={{ height: "30vh" }}>
                     <div className="cotnent-box">

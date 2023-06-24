@@ -4,7 +4,7 @@ const CallToAction5 = () => {
   return (
     <section
       className=""
-      style={{ backgroundImage: "url(images/background/main2.jpg)",textAlign:"center",height:"50vh", }}
+      style={{ backgroundImage: "url(images/background/meeting2.png)",textAlign:"center",height:"50vh", }}
     >
       <div className="auto-container" data-aos="fade-up" style={{paddingTop:"8%"}} >
         <div className="sec-title light text-center" >

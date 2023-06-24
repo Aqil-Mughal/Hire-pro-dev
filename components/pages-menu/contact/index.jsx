@@ -8,7 +8,24 @@ import MapBox from "./MapBox";
 import JpFooter from "../../footer/Jpfooter"
 import CallToAction from "../../call-to-action/CallToAction";
 import CallToAction5 from "../../call-to-action/CallToAction5";
+import { useEffect, useState } from "react";
 const index = () => {
+  const [borderColor, setBorderColor] = useState('#1F9747');
+
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth <= 700) {
+        setBorderColor('#A2D39C');
+      } else {
+        setBorderColor('#1F9747');
+      }
+    };
+
+    window.addEventListener('resize', handleResize);
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
   return (
     <>
       {/* <!-- Header Span --> */}
@@ -29,8 +46,8 @@ const index = () => {
       <section className="contact-section" style={{ border: "1px", backgroundColor: "#CFDBE4", }}>
         <div className="auto-container" >
           {/* <!-- Contact Form --> */}
-          <div className="contact-form default-form" style={{ backgroundColor: "white", borderRight:"300px solid #1F9747"}}>
-            <div style={{ display: "flex",}}>
+          <div className="contact-form default-form" style={{ backgroundColor: "white",borderRight: `300px solid ${borderColor}`, }}>
+            <div style={{ display: "flex", width: "135%" }}>
               <div style={{ width: "100%", }}>
                 <h3 style={{ fontSize: "40px" }}>Get In <span style={{ color: "#1F9747" }}>Touch</span></h3>
                 <p style={{ fontSize: "10px", color: "#202124", lineHeight: "20px" }}>
@@ -42,14 +59,13 @@ const index = () => {
                     <Address />
                   </div>
                   <div>
-
                   </div>
                 </div>
                 {/* End .row */}
               </div>
 
-              <div style={{ width: "100%",}}>
-                <div className="map-outer" style={{position:"absolute",height:"130vh" ,width:"60%",marginTop:"1%"}} >
+              <div style={{ width: "100%", marginLeft: "3%" }}>
+                <div className="map-outer" style={{ height: "115vh", position: "absolute", width: "25%", marginTop: "1%" }} >
                   <MapBox />
                 </div>
               </div>

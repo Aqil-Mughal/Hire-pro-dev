@@ -111,7 +111,7 @@ const index = () => {
                 </div>
 
             </section>
-            <section style={{ backgroundImage: "url(images/background/section7.png)",height:"60vh",padding:"50px",display:"flex",justifyContent:"center" }}>
+            <section style={{ backgroundImage: "url(images/background/meeting2.png)",height:"60vh",padding:"50px",display:"flex",justifyContent:"center" }}>
                 <div style={{color:"white",margin:"auto",width:"60%",textAlign:"center",fontSize:"25px",lineHeight:"30px"}}>
                 Contract employment provides employers with flexibility in managing their workforce and
                  allows them to quickly and easily fill specific roles or projects. Contract workers benefit 

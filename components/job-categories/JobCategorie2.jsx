@@ -16,7 +16,7 @@ const JobCategorie2 = () => {
               <h4>
                 <Link href="/job-list-v2">{item.catTitle}</Link>
               </h4>
-              <img src={item?.images} style={{marginTop:"5%"}} />
+              
               
             </div>
           </div>
@@ -27,3 +27,5 @@ const JobCategorie2 = () => {
 
 export default JobCategorie2;
 // <p>({item.jobNumber} open positions)</p>
+
+// <img src={item?.images} style={{marginTop:"5%"}} />

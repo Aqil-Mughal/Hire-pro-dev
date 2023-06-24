@@ -38,7 +38,7 @@ const RegBanner2 = () => {
             <div className="content">
               <h3>{item.name}</h3>
               <p>{item.text}</p>
-              <Link href={item.buttonLink} className="theme-btn btn-style-five"style={{ color: item.buttonFontColor }}>
+              <Link href={item.buttonLink} className="theme-btn btn-style-five"style={{ color: item.buttonFontColor}}>
               {item.buttonLabel}
               </Link>
               

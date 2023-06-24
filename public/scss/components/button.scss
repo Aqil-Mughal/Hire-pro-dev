@@ -56,7 +56,7 @@ Buttons Styles
 
 .btn-style-two:hover {
   color: #202124;
-  background-color: var(--primary-2nd-hover-bg-color);
+  background-color: white;
 }
 
 /* Btn Style Three */
@@ -112,8 +112,10 @@ Buttons Styles
 }
 
 .btn-style-five:hover {
+  // border:5px solid red;
   color: #ffffff;
-  background-color: transparent;
+  background-color: #197E3B;
+
 }
 
 /* Btn Style Six */

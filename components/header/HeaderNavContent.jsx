@@ -20,8 +20,14 @@ import {
 } from "../../utils/linkActiveChecker";
 import { useRouter } from "next/router";
 
+import { BrowserRouter as Router, Switch, Route, useNavigate } from 'react-router-dom';
+
 const HeaderNavContent = () => {
     const router = useRouter();
+    // const navigate = useNavigate();
+    // const handleClick = () => {
+    //     navigate("/");
+    // };
 
     return (
         <>
@@ -331,7 +337,10 @@ const HeaderNavContent = () => {
                     {/* End Pages menu items */}
 
                     <li className={`${isActiveLink('/home-9', router.asPath) ? "current " : ""}`}>
-                        <span>Home</span>
+                        <span
+                        // onClick={handleClick}
+                         >Home</span>
+                        
                     </li>
 
                     <li className={`${isActiveParentChaild(jobSeekersItems, router.asPath) ? "current " : ""} dropdown`}>

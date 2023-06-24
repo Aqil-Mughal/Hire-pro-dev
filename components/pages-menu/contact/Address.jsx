@@ -3,22 +3,16 @@ import QRCode from 'qrcode.react';
 import Phone from "../../../public/images/icons/phone.png"
 import { TelephoneFill } from 'react-bootstrap-icons';
 import { GeoAltFill, EnvelopeFill } from 'react-bootstrap-icons';
-
-// Inside your JSX code
-
-
-
 import { auto } from '@popperjs/core';
 
-// Inside your JSX code
 <TelephoneFill />
 
 const Address = () => {
 
   const qrValue = 'https://www.aamanto.com/';
   return (
-    <div style={{ width: "500px", display: "flex", }}>
-      <div style={{ width: "40%",}}>
+    <div style={{ width: "100%", display: "flex", }} className='qr_box'>
+      <div style={{ width: "60%",}}>
         <div className="address-icon">
         </div>
         <div className="address-info" style={{ display: "flex" }}>
@@ -49,8 +43,8 @@ const Address = () => {
         </div>
 
       </div>
-      <div style={{ width: "20%", display: "flex", justifyContent: "center", margin: "auto", }}>
-        <QRCode style={{ width: "120px", height: "120px", }} value={qrValue} />
+      <div style={{ width: "20%", display: "flex", justifyContent: "center", margin: "auto", }}  >
+        <QRCode style={{ width: "100%", height: "1", }} value={qrValue} />
       </div>
     </div>
   );

@@ -2,7 +2,7 @@ const ContactForm = () => {
   return (
     <form >
       <div className="column">
-        <div className="form-group col-lg-12 col-md-12 col-sm-12"style={{width:"50%"}}>
+        <div className="form-group col-lg-12 col-md-12 col-sm-12" style={{width:"90%"}}>
           <div className="response"></div>
         </div>
         {/* End .col */}

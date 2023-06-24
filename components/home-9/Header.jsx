@@ -55,7 +55,7 @@ const Header = () => {
               <Link
                 href="/employers-dashboard/post-jobs"
                 className="theme-btn btn-style-five"
-                style={{color:"white",backgroundColor:" #1F9747"}}
+                style={{color:"white",backgroundColor:" #1F9747",}}
               >
                 <span className="btn-title">Admin</span>
               </Link>

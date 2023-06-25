@@ -60,14 +60,8 @@ const Header = () => {
 
                 }}
               >
-                <span className="btn-title">Admin</span>
-                <style jsx>
-                  {`
-                    .theme-btn:hover {
-                      background-color: black;
-                    }
-                  `}
-                </style>
+               Admin
+                
               </Link>
             </div>
           </div>

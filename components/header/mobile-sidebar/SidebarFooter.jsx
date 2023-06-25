@@ -8,7 +8,7 @@ const SidebarFooter = () => {
 
   return (
     <div className="mm-add-listing mm-listitem pro-footer">
-      <a href="#" className="theme-btn btn-style-one mm-listitem__text">
+      <a href="/hiring-form" className="theme-btn btn-style-one mm-listitem__text" style={{backgroundColor:"#1F9747"}}>
         Job Post
       </a>
       {/* job post btn */}

@@ -31,7 +31,7 @@ const Header = () => {
             <div className="logo-box">
               <div className="logo" >
                 <Link href="/home-9">
-                  <img src="/images/icons/OBJECTS.png" style={{width:"70%",height:"6vh",}} />
+                  <img src="/images/icons/OBJECTS.png" style={{ width: "70%", height: "6vh", }} />
                 </Link>
               </div>
             </div>
@@ -55,9 +55,19 @@ const Header = () => {
               <Link
                 href="/employers-dashboard/post-jobs"
                 className="theme-btn btn-style-five"
-                style={{color:"white",backgroundColor:" #1F9747",}}
+                style={{
+                  color: "white", backgroundColor: " #1F9747",
+
+                }}
               >
                 <span className="btn-title">Admin</span>
+                <style jsx>
+                  {`
+                    .theme-btn:hover {
+                      background-color: black;
+                    }
+                  `}
+                </style>
               </Link>
             </div>
           </div>

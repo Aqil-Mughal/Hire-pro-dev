@@ -3,9 +3,9 @@ import Link from "next/link";
 const SidebarHeader = () => {
   return (
     <div className="pro-header">
-      <Link href="/">
-        {/* <img src="/images/logo.svg" alt="brand" /> */}
-        <span>Logo</span>
+      <Link href="/home-9">
+        <img src="/images/icons/OBJECTS.png" style={{ width: "70%", height: "6vh", }} />
+
       </Link>
       {/* End logo */}
 

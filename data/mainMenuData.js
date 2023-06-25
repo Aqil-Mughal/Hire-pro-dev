@@ -45,7 +45,7 @@ export const homeItems = [
             },
             {
                 name: "Home Page 09",
-                routePath: "/",
+                routePath: "/home-9",
             },
             {
                 name: "Home Page 10",

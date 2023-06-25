@@ -335,13 +335,14 @@ const HeaderNavContent = () => {
                         </ul>
                     </li> */}
                     {/* End Pages menu items */}
-
-                    <li className={`${isActiveLink('/home-9', router.asPath) ? "current " : ""}`}>
-                        <span
+                    <li>
+                        <Link
                         // onClick={handleClick}
-                         >Home</span>
+                        href="/home"
+                         >Home</Link>
                         
                     </li>
+                    
 
                     <li className={`${isActiveParentChaild(jobSeekersItems, router.asPath) ? "current " : ""} dropdown`}>
                         <span>Job Seekers</span>
@@ -419,3 +420,10 @@ export default HeaderNavContent;
 //                             ))}
 //                         </ul>
 //                     </li>
+
+// <li className={`${isActiveLink('/home', router.asPath) ? "current " : ""}`}>
+                    //     <span
+                    //     // onClick={handleClick}
+                    //      >Home</span>
+                        
+                    // </li>

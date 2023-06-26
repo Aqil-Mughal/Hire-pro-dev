@@ -5,12 +5,43 @@ const index = () => {
   return (
     <section
       className="banner-section-nine"
-      style={{ backgroundImage: "url(images/background/7.jpg)" }}
+      style={{
+        padding: 0,
+        border:"1px solid white",
+        marginTop:"4.8%",
+        // marginBottom: 300,
+        // alignContent:"center",
+      }}
     >
+    <div  style={{
+      position: "absolute",
+      width:"100%",
+      // backgroundSize: "cover",
+      backgroundPosition: "100%",
+      width: '100%',
+      border:"1px solid white",
+      marginTop:"0",
+      // display: "block",
+      // alignItems: "center",
+      // height: 800,
+      // backgroundImage: "linear-gradient(180deg,hsla(0,0%,100%,0) -50%,rgba(0,0,0,.8))"
+    }}>
+      <video className="video1" autoPlay loop muted id='video' style={{
+        width: '100%',
+        height: "100%",
+        padding:0
+      }}>
+        {/* <source src="https://websites-static-assets.s3.us-east-2.amazonaws.com/job-port+1.mp4" type="video/mp4" /> */}
+        <source src="images/resource/home1.mp4" type="video/mp4" />
+        {/* <source src={Video} type="video/mp4"/> */}
+      </video>
+      {/* <video src={Video} /> */}
+    </div>
       <div className="auto-container">
-        <div className="cotnent-box">
-          <div className="title-box" data-aso-delay="300" data-aos="fade-up">
-            <h3>15,000+ Browse Jobs</h3>
+        <div className="cotnent-box" >
+          <div className="title-box" data-aso-delay="300" data-aos="fade-up" style={{marginTop:"20%"}}>
+            <h3>Unlock Your Full Potential with Our Cutting-Edge 
+            Recruitment Solutions</h3>
             <div className="text">
               Find Jobs, Employment & Career Opportunities
             </div>
@@ -27,11 +58,7 @@ const index = () => {
         </div>
         {/* <!-- Job Search Form --> */}
 
-        <div className="fun-fact-section">
-          <div className="row">
-            <Funfact2 />
-          </div>
-        </div>
+        
         {/* <!-- Fun Fact Section --> */}
       </div>
     </section>
@@ -39,3 +66,10 @@ const index = () => {
 };
 
 export default index;
+
+
+// <div className="fun-fact-section">
+//           <div className="row">
+//             <Funfact2 />
+//           </div>
+//         </div>

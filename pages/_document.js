@@ -16,11 +16,11 @@ export default function Document() {
         />
         <meta
           name="description"
-          content="Superio - Job Borad React NextJS Template"
+          content="Hirepro"
         />
         <meta name="ibthemes" content="ATFN" />
 
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/favico.png" type="image/png"/>
       </Head>
       <body>
         <Main />

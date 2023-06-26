@@ -16,9 +16,9 @@ const LoginPopup = () => {
 
             <div className="modal-body">
               {/* <!-- Login modal --> */}
-              <div id="login-modal">
+              <div id="login-modal" >
                 {/* <!-- Login Form --> */}
-                <div className="login-form default-form">
+                <div className="login-form default-form" >
                   <FormContent />
                 </div>
                 {/* <!--End Login Form --> */}
@@ -57,7 +57,9 @@ const LoginPopup = () => {
           </div>
           {/* End modal-content */}
         </div>
+        
       </div>
+      
       {/* <!-- Login Popup Modal --> */}
     </>
   );

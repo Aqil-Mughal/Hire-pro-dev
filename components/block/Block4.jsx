@@ -7,7 +7,7 @@ const Block4 = () => {
         <div className="image-column">
           <figure className="image">
             <img
-              src="images/resource/jobseeker.png"
+              src="images/resource/image7.png"
               alt="resources about block"
             />
           </figure>
@@ -17,14 +17,15 @@ const Block4 = () => {
         <div className="content-column">
           <div className="inner-column wow fadeInUp">
             <div className="sec-title">
-              <h2>I am Jobseeker</h2>
+              <h2>Need for talent acquisition?  </h2>
               <div className="text">
-                One of our One of our jobs has some kind of flexibility jobs has
-                some kind of flexibility option such as telecommuting, a
-                part-time schedule or a flexible or flextime.
+                Look no further. Our commitment is to swiftly find the perfect candidates for your needs,
+                 providing you with peace of mind. With our daily recruitment efforts and rapid growth, 
+                 we guarantee to deliver exceptional talent to fuel your organization's success. 
+                 Find your ideal talent with us today.
               </div>
-              <Link href="/job-list-v4" className="theme-btn btn-style-one">
-                Browse Job
+              <Link href="/job-list-v4" className="theme-btn btn-style-one" style={{backgroundColor:"#1F9747"}}>
+                Check New Talent
               </Link>
             </div>
           </div>

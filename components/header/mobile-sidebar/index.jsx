@@ -33,6 +33,8 @@ const Index = () => {
             <ProSidebarProvider>
                 <Sidebar>
                     <Menu>
+                        <Link href='/home' style={{marginLeft:"20px",color:"black"}}>
+                            Home</Link>
                         {mobileMenuData.map((item) => (
                             <SubMenu
                                 className={
@@ -66,6 +68,8 @@ const Index = () => {
                                 ))}
                             </SubMenu>
                         ))}
+                        <Link href='/contact' style={{marginLeft:"20px",color:"black",}}>
+                        Contact us</Link>
                     </Menu>
                 </Sidebar>
             </ProSidebarProvider>

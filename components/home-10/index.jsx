@@ -39,7 +39,7 @@ const index = () => {
 
       <section className="job-section-five style-two">
         <div className="auto-container">
-          <div className="row" data-aos="fade-up">
+          <div className="row" data-aos="fade-up" style={{border:"1px solid red"}}>
             <div className="featured-column col-xl-9 col-lg-12 col-md-12 col-sm-12">
               <div className="sec-title">
                 <h2>Featured Jobs</h2>

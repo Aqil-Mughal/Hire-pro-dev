@@ -1,57 +1,52 @@
+// import { FaMapMarkerAlt } from 'react-icons/fa';
+import QRCode from 'qrcode.react';
+import Phone from "../../../public/images/icons/phone.png"
+import { TelephoneFill } from 'react-bootstrap-icons';
+import { GeoAltFill, EnvelopeFill } from 'react-bootstrap-icons';
+import { auto } from '@popperjs/core';
+
+<TelephoneFill />
+
 const Address = () => {
-  const addressContent = [
-    {
-      id: 1,
-      iconName: "placeholder",
-      title: "Address",
-      text: (
-        <>
-          329 Queensberry Street, North
-          <br /> Melbourne VIC 3051, Australia.
-        </>
-      ),
-    },
-    {
-      id: 2,
-      iconName: "smartphone",
-      title: "Call Us",
-      text: (
-        <>
-          <a href="tel:+4733378901" className="phone">
-            123 456 7890
-          </a>
-        </>
-      ),
-    },
-    {
-      id: 3,
-      iconName: "letter",
-      title: "Email",
-      text: (
-        <>
-          {" "}
-          <a href="#">contact.london@example.com</a>
-        </>
-      ),
-    },
-  ];
+
+  const qrValue = 'https://www.aamanto.com/';
   return (
-    <>
-      {addressContent.map((item) => (
-        <div
-          className="contact-block col-lg-4 col-md-6 col-sm-12"
-          key={item.id}
-        >
-          <div className="inner-box">
-            <span className="icon">
-              <img src={`images/icons/${item.iconName}.svg`} alt="icon" />
-            </span>
-            <h4>{item.title}</h4>
-            <p>{item.text}</p>
+    <div style={{ width: "100%", display: "flex", }} className='qr_box'>
+      <div style={{ width: "60%",}}>
+        <div className="address-icon">
+        </div>
+        <div className="address-info" style={{ display: "flex" }}>
+          <div style={{ fontSize: "20px" }}>
+            <TelephoneFill />
+          </div>
+          <div style={{ marginLeft: "20px" }}>
+            <h3 className="address-title" style={{ fontWeight: "400" }}>Phone: <br /><span style={{ color: "#1967D2", fontWeight: "300" }}>03 5432 1234</span></h3>
           </div>
         </div>
-      ))}
-    </>
+        <div className="address-info" style={{ display: "flex" }}>
+          <div style={{ fontSize: "20px" }}>
+          <GeoAltFill />
+          </div>
+          <div style={{ marginLeft: "20px" }}>
+            <h3 className="address-title" style={{ fontWeight: "400" }}>ADDRESS <br /><span style={{ color: "#1967D2",fontWeight: "300" }}>lake city lahore</span></h3>
+          </div>
+        </div>
+
+        <div className="address-info" style={{ display: "flex" }}>
+          <div style={{ fontSize: "20px" }}>
+          <EnvelopeFill />
+          </div>
+          <div style={{ marginLeft: "20px" }}>
+            <h3 className="address-title" style={{fontWeight:"400"}}>EMAIL
+              <br /><span style={{ color: "#1967D2",fontWeight: "300"}}>info@aamanto.com</span></h3>
+          </div>
+        </div>
+
+      </div>
+      <div style={{ width: "20%", display: "flex", justifyContent: "center", margin: "auto", }}  >
+        <QRCode style={{ width: "100%", height: "1", }} value={qrValue} />
+      </div>
+    </div>
   );
 };
 

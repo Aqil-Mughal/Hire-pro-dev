@@ -47,7 +47,8 @@ const index = () => {
       </section>
       {/* <!-- End Clients Section--> */}
 
-      <Block3 />
+    <Block3 />
+
       {/* <!-- End Recruiter Section --> */}
 
       <section className="job-section-four alternate">

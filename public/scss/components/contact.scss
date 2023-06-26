@@ -58,11 +58,12 @@ Contact Section
 }
 
 .contact-section .contact-form {
-  max-width: 850px;
+  width:85% ;
   margin: 0 auto;
-  border: 1px solid #ecedf2;
-  border-radius: 8px;
+  // border: 1px solid #ecedf2;
+  border-radius: 30px;
   padding: 50px 50px 70px;
+  border:"10px solid red"
 }
 
 .contact-section .contact-form h3 {
@@ -75,4 +76,14 @@ Contact Section
 
 .contact-section .contact-form .theme-btn {
   width: 100%;
+}
+@media (max-width: 900px) {
+  .qr_box {
+    flex-direction: column;
+
+  }
+}
+
+.map-canvas{
+  // border:"1px solid red"
 }

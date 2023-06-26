@@ -20,8 +20,11 @@ import {
 } from "../../utils/linkActiveChecker";
 import { useRouter } from "next/router";
 
+import { BrowserRouter as Router, Switch, Route, useNavigate } from 'react-router-dom';
+
 const HeaderNavContent = () => {
     const router = useRouter();
+    
 
     return (
         <>
@@ -329,10 +332,14 @@ const HeaderNavContent = () => {
                         </ul>
                     </li> */}
                     {/* End Pages menu items */}
-
-                    <li className={`${isActiveLink('/home', router.asPath) ? "current " : ""}`}>
-                        <span>Home</span>
+                    <li>
+                        <Link
+                        // onClick={handleClick}
+                        href="/home"
+                         >Home</Link>
+                        
                     </li>
+                    
 
                     <li className={`${isActiveParentChaild(jobSeekersItems, router.asPath) ? "current " : ""} dropdown`}>
                         <span>Job Seekers</span>
@@ -366,8 +373,10 @@ const HeaderNavContent = () => {
                         </ul>
                     </li>
 
+                    
+
                     <li className={`${isActiveParentChaild(servicesItems, router.asPath) ? "current " : ""} dropdown`}>
-                        <span>Services</span>
+                        <span>About Us</span>
                         <ul>
                             {servicesItems.map((item, i) => (
                                 <li
@@ -382,25 +391,8 @@ const HeaderNavContent = () => {
                         </ul>
                     </li>
 
-                    <li className={`${isActiveParentChaild(servicesItems, router.asPath) ? "current " : ""} dropdown`}>
-                        <span>About us</span>
-                        <ul>
-                            {servicesItems.map((item, i) => (
-                                <li
-                                    className={
-                                        isActiveLink(item.routePath, router.asPath) ? "current" : ""
-                                    }
-                                    key={i}
-                                >
-                                    <Link href={item.routePath}>{item.name}</Link>
-                                </li>
-                            ))}
-                        </ul>
-                    </li>
-
-                    <li className={`${isActiveLink('/home', router.asPath) ? "current " : ""}`}>
-                        <span>Contact</span>
-                    </li>
+                    
+                    <li><Link href={'/contact'}>Contact Us</Link></li>
 
                 </ul>
             </nav>
@@ -409,3 +401,26 @@ const HeaderNavContent = () => {
 };
 
 export default HeaderNavContent;
+
+// <li className={`${isActiveParentChaild(servicesItems, router.asPath) ? "current " : ""} dropdown`}>
+//                         <span>Services</span>
+//                         <ul>
+//                             {servicesItems.map((item, i) => (
+//                                 <li
+//                                     className={
+//                                         isActiveLink(item.routePath, router.asPath) ? "current" : ""
+//                                     }
+//                                     key={i}
+//                                 >
+//                                     <Link href={item.routePath}>{item.name}</Link>
+//                                 </li>
+//                             ))}
+//                         </ul>
+//                     </li>
+
+// <li className={`${isActiveLink('/home', router.asPath) ? "current " : ""}`}>
+                    //     <span
+                    //     // onClick={handleClick}
+                    //      >Home</span>
+                        
+                    // </li>

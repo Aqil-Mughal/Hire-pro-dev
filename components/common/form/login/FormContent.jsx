@@ -39,13 +39,20 @@ const FormContent = () => {
   }
 
   return (
+<<<<<<< HEAD
     <div className="form-inner">
       <h3>Login to Admin Dashboard</h3>
       <p>Please fill your information below</p>
+=======
+    <div className="form-inner" style={{}}>
+      <h3>Login to Admin Dashboard</h3>
+      <span style={{paddingTop:0}}>Please fill your information below</span>
+>>>>>>> c13531e7e60e69321db5bc9445747f9f929965bd
 
       {/* <!--Login Form--> */}
       <form method="post">
         <div className="form-group">
+<<<<<<< HEAD
           <label>Email *</label>
           <input
             type="text"
@@ -55,6 +62,10 @@ const FormContent = () => {
             placeholder="Type Email"
             required
           />
+=======
+          <label>Email</label>
+          <input type="text" name="username" placeholder="Email" required />
+>>>>>>> c13531e7e60e69321db5bc9445747f9f929965bd
         </div>
         {/* name */}
 
@@ -71,6 +82,7 @@ const FormContent = () => {
         </div>
         {/* password */}
 
+<<<<<<< HEAD
         {/* <div className="form-group">
           <div className="field-outer">
             <div className="input-group checkboxes square">
@@ -85,6 +97,9 @@ const FormContent = () => {
           </div>
         </div> */}
         {/* forgot password */}
+=======
+       
+>>>>>>> c13531e7e60e69321db5bc9445747f9f929965bd
 
         <div className="form-group">
           <button
@@ -99,7 +114,11 @@ const FormContent = () => {
         {/* login */}
       </form>
       {/* End form */}
+      
+       <div className="copyright-text" style={{color:"black",}}>
+              {/* {new Date().getFullYear()}  */}
 
+<<<<<<< HEAD
       {/* <div className="bottom-box">
         <div className="text">
           Don&apos;t have an account?{" "}
@@ -120,6 +139,19 @@ const FormContent = () => {
 
         <LoginWithSocial />
       </div> */}
+=======
+              Made by { }
+              <a
+                href=""
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{ color: "#1967D2" }}
+              >
+                Aamanto Tecnologies
+              </a>
+              . Copy Rights Reserved © 2023.
+            </div>
+>>>>>>> c13531e7e60e69321db5bc9445747f9f929965bd
       {/* End bottom-box LoginWithSocial */}
 
 
@@ -145,7 +177,44 @@ const FormContent = () => {
       </Modal>
 
     </div>
+    
   );
 };
 
 export default FormContent;
+
+// <div className="form-group">
+// <div className="field-outer">
+//   <div className="input-group checkboxes square">
+//     <input type="checkbox" name="remember-me" id="remember" />
+//     <label htmlFor="remember" className="remember">
+//       <span className="custom-checkbox"></span> Remember me
+//     </label>
+//   </div>
+//   <a href="#" className="pwd">
+//     Forgot password?
+//   </a>
+// </div>
+// </div>
+{/* forgot password */}
+
+      // <div className="bottom-box">
+      //   <div className="text">
+      //     Don&apos;t have an account?{" "}
+      //     <Link
+      //       href="#"
+      //       className="call-modal signup"
+      //       data-bs-dismiss="modal"
+      //       data-bs-target="#registerModal"
+      //       data-bs-toggle="modal"
+      //     >
+      //       Signup
+      //     </Link>
+      //   </div>
+
+      //   <div className="divider">
+      //     <span>or</span>
+      //   </div>
+
+      //   <LoginWithSocial />
+      // </div>

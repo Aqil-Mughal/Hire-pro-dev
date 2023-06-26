@@ -35,7 +35,8 @@ const index = () => {
 
       }}>
         {/* <source src="https://websites-static-assets.s3.us-east-2.amazonaws.com/job-port+1.mp4" type="video/mp4" /> */}
-        <source src="images/resource/home1.mp4" type="video/mp4" />
+        <source src="images/resource/home1.mp4"  alt="Background video" type="video/mp4" />
+        <img src="images/resource/overlay-image.png" alt="Overlay Image" style={{ position: 'absolute', top: 0, left: 0 }} />
         {/* <source src={Video} type="video/mp4"/> */}
       </video>
       

@@ -27,7 +27,7 @@ const Header = () => {
           {/* <!--Nav Outer --> */}
           <div className="nav-outer">
             <div className="logo-box">
-              <div className="logo">
+              <div className="logo" style={{visibility: "hidden"}}>
                 <Link href="/" className="noSticky">
                   <img src="images/logo-2.svg" alt="logo" title="brand" />
                 </Link>
@@ -43,10 +43,10 @@ const Header = () => {
             {/* <!-- Login/Register --> */}
             <div className="btn-box">
               <Link
-                href="/employers-dashboard/post-jobs"
+                href="/"
                 className="theme-btn btn-style-one"
               >
-                <span className="btn-title">Job Post</span>
+                <span className="btn-title">Home</span>
               </Link>
             </div>
           </div>

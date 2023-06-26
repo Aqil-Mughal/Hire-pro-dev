@@ -1,0 +1,237 @@
+import FooterDefault from "../../footer/common-footer";
+import DefaulHeader from "../../header/DefaulHeader";
+import MobileMenu from "../../header/MobileMenu";
+import Link from "next/link";
+import { useState } from "react";
+import { useQuery } from "@apollo/client";
+import { GET_LOCATION_DROPDOWN, JOBS_BY_JOB_TITLE_LOCATION_DISTANCE_JOB_SECTOR } from "../../../data/graphQL/Queries";
+import Select, { components, PlaceholderProps } from "react-select";
+
+const index = () => {
+
+  const [titleState, setTitleState] = useState("")
+  const [locationState, setLocationState] = useState("Canada")
+  const [rangeState, setRangeState] = useState(5000)
+  const [jobSectorState, setJobSectorState] = useState("")
+  const [btnLoading, setBtnLoading] = useState(false)
+
+  const getLocationDropdown = useQuery(GET_LOCATION_DROPDOWN, {
+    variables: { address: locationState }
+  })
+
+  const jobByJobInfo = useQuery(JOBS_BY_JOB_TITLE_LOCATION_DISTANCE_JOB_SECTOR)
+
+  const handleFindJobs = () => {
+    setBtnLoading(true)
+    jobByJobInfo.refetch({
+      jobTitle: titleState,
+      location: locationState,
+      distance: rangeState,
+      jobSector: jobSectorState,
+    }).finally(() => {
+      setBtnLoading(false)
+    });
+  };
+
+
+
+  console.log(jobByJobInfo)
+  console.log({ titleState, locationState, jobSectorState })
+
+  const options = getLocationDropdown?.data?.addressList.map((location) => ({
+    value: location,
+    label: location,
+  })) || [];
+
+
+  return (
+    <>
+      <span className="header-span"></span>
+      <DefaulHeader />
+      <MobileMenu />
+
+      <section className="page-title style-two">
+        <div className="auto-container">
+          <>
+            <div className="job-search-form">
+              <div className="row">
+                <div className="form-group col-lg-4 col-md-12 col-sm-12">
+                  <>
+                    <input
+                      type="text"
+                      name="listing-search"
+                      placeholder="Job title or keywords"
+                      value={titleState}
+                      onChange={(e) => setTitleState(e.target.value)}
+                    />
+                    <span className="icon flaticon-search-3"></span>
+                  </>
+                </div>
+
+                <div className="form-group col-lg-4 col-md-12 col-sm-12 location">
+                  <>
+                    {/* <input
+                      type="text"
+                      name="listing-search"
+                      placeholder="City or postcode"
+                    /> */}
+                    <Select
+                      options={options}
+                      // inputValue={locationState}
+                      value={locationState}
+                      // onInputChange={(e) => setLocationState(e)}
+                      onChange={(e) => setLocationState(e)}
+                      // onClick={handleChange}
+                      placeholder="Location or postal code"
+                    // placeholder: (base)
+                    styles={{
+                      control: (baseStyles, state) => ({
+                        ...baseStyles,
+                        margin: 0,
+                        padding: 0,
+                    //     background: "rgba(39, 167, 223, 0.1)",
+                        border: "none",
+                        paddingLeft: "30px",
+                        height: 60
+                    //     borderRadius: "8px",
+
+                      }),
+                    }}
+                    />
+                    <span className="icon flaticon-map-locator"></span>
+                  </>
+                </div>
+
+                <div className="form-group col-lg-4 col-md-12 col-sm-12 location">
+                  <>
+                    <select
+                      className="form-select"
+                      name="jobSectorState"
+                      defaultValue={jobSectorState}
+                      onChange={(e) => setJobSectorState(e.target.value)}
+                    >
+                      <option value="">Job category</option>
+                      <option value="Administrative Support">Administrative Support</option>
+                      <option value="Contact Centre And Customer Care"> Contact Centre And Customer Care</option>
+                      <option value="Engineering">Engineering</option>
+                      <option value="Finance And Accounting">Finance And Accounting</option>
+                      <option value="Healthcare">Healthcare</option>
+                      <option value="Human Resources">Human Resources</option>
+                      <option value="Industrial Support">Industrial Support</option>
+                      <option value="Sales And Marketing">Sales And Marketing</option>
+                      <option value="Skilled Trades And Industrial Management">Skilled Trades And Industrial Management</option>
+                      <option value="Legal">Legal</option>
+                      <option value="Manufacturing">Manufacturing</option>
+                    </select>
+                    <span className="icon flaticon-briefcase"></span>
+                  </>
+                </div>
+              </div>
+
+            </div>
+            <br></br>
+            <div className="form-group col-lg-12 col-md-12 col-sm-12 text-center">
+              {btnLoading ?
+                <button
+                  className="theme-btn btn-style-nine"
+                  disabled={true}
+                >
+                  Loading...
+                </button>
+                :
+                <button onClick={handleFindJobs} className="theme-btn btn-style-two">
+                  Find Jobs
+                </button>
+              }
+
+            </div>
+          </>
+        </div>
+      </section>
+
+      <section className="ls-section">
+        <div className="auto-container">
+          <div className="row">
+            <div className="content-column col-lg-12">
+              <div className="ls-outer">
+                <div className="row">
+                  {
+                    jobByJobInfo?.loading ?
+                      <div className="text-center">
+                        <div className="spinner-grow" role="status">
+                          <span className="visually-hidden">Loading...</span>
+                        </div>
+                      </div>
+                      :
+                      !jobByJobInfo?.data?.SearchAgencyPostedJobByJobTitleLocationDistanceJobsector ||
+                        jobByJobInfo?.data?.SearchAgencyPostedJobByJobTitleLocationDistanceJobsector.length === 0 ?
+                        <div className="text-center"><p>No items found for this search.</p></div>
+                        :
+                        jobByJobInfo?.data?.SearchAgencyPostedJobByJobTitleLocationDistanceJobsector.map(item =>
+                          <div
+                            className="job-block col-lg-6 col-md-12 col-sm-12"
+                            key={item.agency_job_post_job_id}
+                          >
+                            <div className="inner-box">
+                              <div className="content p-0">
+                                <h4>
+                                  <Link href={`/job-single-v4/1`}>
+                                    {item.job_title}
+                                  </Link>
+                                </h4>
+
+                                <p>{item.job_description}</p>
+                                <br></br>
+
+                                <ul className="job-other-info">
+                                  <li className="time">
+                                    <span><i className="fa fa-map-marker"></i> {item.location}</span>
+                                  </li>
+                                  <li className="privacy">
+                                    <span><i className="fa fa-filter"></i> {item.job_sector}</span>
+                                  </li>
+                                </ul>
+
+                              </div>
+                            </div>
+                          </div>
+                        )}
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <nav className="ls-pagination">
+        <ul>
+          <li className="prev">
+            <a href="#">
+              <i className="fa fa-arrow-left"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#">1</a>
+          </li>
+          <li>
+            <a href="#" className="current-page">
+              2
+            </a>
+          </li>
+          <li>
+            <a href="#">3</a>
+          </li>
+          <li className="next">
+            <a href="#">
+              <i className="fa fa-arrow-right"></i>
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <FooterDefault footerStyle="alternate5" />
+    </>
+  );
+};
+
+export default index;

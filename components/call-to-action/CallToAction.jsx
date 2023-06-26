@@ -5,14 +5,14 @@ const CallToAction = () => {
         <div className="outer-box" data-aos="fade-up">
           <div className="content-column">
             <div className="sec-title">
-              <h2>Recruiting?</h2>
+              <h2>Get Started Today</h2>
               <div className="text">
-                Advertise your jobs to millions of monthly users and search 15.8
-                million
-                <br /> CVs in our database.
+                Aamnato always try to provide the best Business Solutions for Clients to
+                <br />
+                grow up their Business sharply and smoothly.
               </div>
               <a href="#" className="theme-btn btn-style-one bg-blue">
-                <span className="btn-title">Start Recruiting Now</span>
+                <span className="btn-title">Contact us Today</span>
               </a>
             </div>
           </div>

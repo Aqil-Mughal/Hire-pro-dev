@@ -379,14 +379,14 @@ export const jobSeekersItems = [
     },
     {
         name: "Submit Your Resume",
-        routePath: "/pricing",
+        routePath: "/submit-resume",
     }
 ]
 
 export const employersItems = [
     {
         name: "Hiring Form",
-        routePath: "/about",
+        routePath: "/hiring-form",
     },
     {
         name: "Employer FAQ's",

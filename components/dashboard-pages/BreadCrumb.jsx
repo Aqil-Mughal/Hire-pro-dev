@@ -1,8 +1,15 @@
-const BreadCrumb = ({ title = "" }) => {
+const BreadCrumb = ({ title = "", desc = "", image = "" }) => {
   return (
     <div className="upper-title-box">
-      <h3>{title}</h3>
-      <div className="text">Ready to jump back in?</div>
+      <div className="row">
+        <div className="col-6 m-auto">
+          <h3>{title}</h3>
+          <div className="text">{desc}</div>
+        </div>
+        <div className="col-6 text-end">
+          <img src={image} alt="Banner" />
+        </div>
+      </div>
     </div>
   );
 };

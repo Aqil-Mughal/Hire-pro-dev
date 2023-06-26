@@ -18,8 +18,10 @@ const index = () => {
       <div className="login-section">
         <div
           className="image-layer"
-          style={{ backgroundImage: "url(images/background/12.jpg)" }}
-        ></div>
+          style={{ backgroundImage: "url(images/custom/login-banner.png)" }}
+        >
+          <h1 className="login-logo-centered">Logo goes here</h1>
+        </div>
         <div className="outer-box">
           {/* <!-- Login Form --> */}
           <div className="login-form default-form">

@@ -1,26 +1,77 @@
 import Link from "next/link";
 import LoginWithSocial from "./LoginWithSocial";
+import { Modal, Button } from "react-bootstrap";
+import { useRouter } from "next/router";
+import { useState } from "react";
+import { useLazyQuery } from "@apollo/client";
+import { LOGIN } from "../../../../data/graphQL/Queries";
 
 const FormContent = () => {
+
+  const { push } = useRouter()
+  const [openErrorModal, setOpenErrorModal] = useState(false)
+  const [formData, setFormData] = useState({
+    email: "",
+    password: "",
+  })
+
+  const [loginHandler, { data, loading, error }] = useLazyQuery(LOGIN, {
+    onCompleted(data) {
+      console.log(data)
+      if (data.signin === null) {
+        setOpenErrorModal(!openErrorModal)
+        return
+      } else {
+        localStorage.setItem("token", data.signin)
+        push("/employers-dashboard/dashboard")
+      }
+    },
+    onError(error) {
+      console.log(error)
+    }
+  })
+
+  const submitHandler = (e) => {
+    e.preventDefault()
+    loginHandler({
+      variables: { email: formData.email, password: formData.password },
+    })
+  }
+
   return (
     <div className="form-inner">
-      <h3>Login to Superio</h3>
+      <h3>Login to Admin Dashboard</h3>
+      <p>Please fill your information below</p>
 
       {/* <!--Login Form--> */}
       <form method="post">
         <div className="form-group">
-          <label>Username</label>
-          <input type="text" name="username" placeholder="Username" required />
+          <label>Email *</label>
+          <input
+            type="text"
+            name="email"
+            value={formData.email}
+            onChange={(e) => setFormData({ ...formData, [e.target.name]: e.target.value })}
+            placeholder="Type Email"
+            required
+          />
         </div>
         {/* name */}
 
         <div className="form-group">
-          <label>Password</label>
-          <input type="password" name="password" placeholder="Password" />
+          <label>Password *</label>
+          <input
+            type="password"
+            name="password"
+            value={formData.password}
+            onChange={(e) => setFormData({ ...formData, [e.target.name]: e.target.value })}
+            placeholder="Type Password"
+            required
+          />
         </div>
         {/* password */}
 
-        <div className="form-group">
+        {/* <div className="form-group">
           <div className="field-outer">
             <div className="input-group checkboxes square">
               <input type="checkbox" name="remember-me" id="remember" />
@@ -32,23 +83,24 @@ const FormContent = () => {
               Forgot password?
             </a>
           </div>
-        </div>
+        </div> */}
         {/* forgot password */}
 
         <div className="form-group">
           <button
             className="theme-btn btn-style-one"
-            type="submit"
+            // type="submit"
             name="log-in"
+            onClick={submitHandler}
           >
-            Log In
+            LOGIN
           </button>
         </div>
         {/* login */}
       </form>
       {/* End form */}
 
-      <div className="bottom-box">
+      {/* <div className="bottom-box">
         <div className="text">
           Don&apos;t have an account?{" "}
           <Link
@@ -67,8 +119,31 @@ const FormContent = () => {
         </div>
 
         <LoginWithSocial />
-      </div>
+      </div> */}
       {/* End bottom-box LoginWithSocial */}
+
+
+      <Modal
+        size="lg"
+        aria-labelledby="contained-modal-title-vcenter1"
+        centered
+        show={openErrorModal}
+        className="jp-modal"
+      >
+        <Modal.Header id="contained-modal-title-vcenter1">
+          <h3>Message</h3>
+        </Modal.Header>
+        <Modal.Body style={{ overflow: 'hidden' }}>Invalid Credentials.</Modal.Body>
+        <Modal.Footer>
+          <Button
+            variant="danger"
+            onClick={() => setOpenErrorModal(!openErrorModal)}
+          >
+            OK
+          </Button>
+        </Modal.Footer>
+      </Modal>
+
     </div>
   );
 };

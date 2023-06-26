@@ -384,11 +384,7 @@ export const jobSeekersItems = [
     },
     {
         name: "Submit Your Resume",
-<<<<<<< HEAD
         routePath: "/submit-resume",
-=======
-        routePath: "/submit-your-resume",
->>>>>>> c13531e7e60e69321db5bc9445747f9f929965bd
     }
 ]
 

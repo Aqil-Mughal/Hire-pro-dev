@@ -246,18 +246,6 @@ Main Header
   transition: all 0.3s ease;
 }
 
-<<<<<<< HEAD
-.main-menu .navigation>li>ul>li>span:hover,
-.main-menu .navigation>li>ul>li>a:hover {
-  color: var(--primary-color);
-}
-
-.main-menu .navigation>li>ul>li>span.current,
-.main-menu .navigation>li.current.dropdown>span:after,
-.main-menu .navigation>li>ul>li>ul>li.current>a,
-.main-menu .navigation>li>ul>li.current>a {
-  color: var(--primary-color) !important;
-=======
 .main-menu .navigation > li > ul > li > span:hover,
 .main-menu .navigation > li > ul > li > a:hover {
   // color: var(--primary-color);
@@ -268,7 +256,6 @@ Main Header
 .main-menu .navigation > li > ul > li > ul > li.current > a,
 .main-menu .navigation > li > ul > li.current > a {
   color: #1F9747 !important;
->>>>>>> c13531e7e60e69321db5bc9445747f9f929965bd
 }
 
 .main-menu .navigation>li>ul>li>ul {
@@ -314,16 +301,10 @@ Main Header
   transition: all 0.3s ease;
 }
 
-<<<<<<< HEAD
-.main-menu .navigation>li>ul>li>ul>li>a:hover,
-.main-menu .navigation>li>ul>li>ul>li>span:hover {
-  color: var(--primary-color);
-=======
 .main-menu .navigation > li > ul > li > ul > li > a:hover,
 .main-menu .navigation > li > ul > li > ul > li > span:hover {
   // color: var(--primary-color);
   color:#1F9747;
->>>>>>> c13531e7e60e69321db5bc9445747f9f929965bd
 }
 
 .main-menu .navigation>li>ul>li.dropdown>span:before {
@@ -494,12 +475,6 @@ Header Style Two
   margin-right: 0;
 }
 
-<<<<<<< HEAD
-.header-style-two .main-menu .navigation>li.dropdown>span:after,
-.header-style-two .main-menu .navigation>li>span,
-.header-style-two .main-menu .navigation>li>a {
-  color: #ffffff;
-=======
 .header-style-two .main-menu .navigation > li.dropdown > span:after,
 .header-style-two .main-menu .navigation > li > span,
 .header-style-two .main-menu .navigation > li > a {
@@ -509,7 +484,6 @@ Header Style Two
 .header-style-two .main-menu .navigation.scrolled > li > span,
 .header-style-two .main-menu .navigation.scrolled > li > a {
   color: black;
->>>>>>> c13531e7e60e69321db5bc9445747f9f929965bd
 }
 .header-style-two .theme-btn {
   border-radius: 50px;

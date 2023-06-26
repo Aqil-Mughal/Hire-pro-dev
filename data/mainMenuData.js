@@ -1,29 +1,29 @@
 export const homeItems = [
-    {
-        id: 1,
-        items: [
-            {
-                name: "Home Page 01",
-                routePath: "/home-1",
-            },
-            {
-                name: "Home Page 02",
-                routePath: "/home-2",
-            },
-            {
-                name: "Home Page 03",
-                routePath: "/home-3",
-            },
-            {
-                name: "Home Page 04",
-                routePath: "/home-4",
-            },
-            {
-                name: "Home Page 05",
-                routePath: "/home-5",
-            },
-        ],
-    },
+    // {
+    //     id: 1,
+    //     items: [
+    //         {
+    //             name: "Home",
+    //             routePath: "/home-9",
+    //         },
+    //         {
+    //             name: "Home Page 02",
+    //             routePath: "/",
+    //         },
+    //         {
+    //             name: "Home Page 03",
+    //             routePath: "/home-3",
+    //         },
+    //         {
+    //             name: "Home Page 04",
+    //             routePath: "/home-4",
+    //         },
+    //         {
+    //             name: "Home Page 05",
+    //             routePath: "/home-5",
+    //         },
+    //     ],
+    // },
     {
         id: 2,
         items: [
@@ -45,7 +45,7 @@ export const homeItems = [
             },
             {
                 name: "Home Page 09",
-                routePath: "/home-9",
+                routePath: "/",
             },
             {
                 name: "Home Page 10",
@@ -53,31 +53,31 @@ export const homeItems = [
             },
         ],
     },
-    {
-        id: 3,
-        items: [
-            {
-                name: "Home Page 11",
-                routePath: "/home-11",
-            },
-            {
-                name: "Home Page 12",
-                routePath: "/home-12",
-            },
-            {
-                name: "Home Page 13",
-                routePath: "/home-13",
-            },
-            {
-                name: "Home Page 14",
-                routePath: "/home-14",
-            },
-            {
-                name: "Home Page 15",
-                routePath: "/home-15",
-            },
-        ],
-    },
+    // {
+    //     id: 3,
+    //     items: [
+    //         {
+    //             name: "Home Page 11",
+    //             routePath: "/home-11",
+    //         },
+    //         {
+    //             name: "Home Page 12",
+    //             routePath: "/home-12",
+    //         },
+    //         {
+    //             name: "Home Page 13",
+    //             routePath: "/home-13",
+    //         },
+    //         {
+    //             name: "Home Page 14",
+    //             routePath: "/home-14",
+    //         },
+    //         {
+    //             name: "Home Page 15",
+    //             routePath: "/home-15",
+    //         },
+    //     ],
+    // },
     {
         id: 4,
         items: [
@@ -405,7 +405,7 @@ export const employersItems = [
 
 export const servicesItems = [
     {
-        name: "About ",
+        name: "About Us",
         routePath: "/about",
     },
     {

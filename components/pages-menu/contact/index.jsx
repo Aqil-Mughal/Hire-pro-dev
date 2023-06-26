@@ -9,23 +9,9 @@ import JpFooter from "../../footer/Jpfooter"
 import CallToAction from "../../call-to-action/CallToAction";
 import CallToAction5 from "../../call-to-action/CallToAction5";
 import { useEffect, useState } from "react";
+import { Border } from "react-bootstrap-icons";
 const index = () => {
   const [borderColor, setBorderColor] = useState('#1F9747');
-
-  useEffect(() => {
-    const handleResize = () => {
-      if (window.innerWidth <= 700) {
-        setBorderColor('#A2D39C');
-      } else {
-        setBorderColor('#1F9747');
-      }
-    };
-
-    window.addEventListener('resize', handleResize);
-    return () => {
-      window.removeEventListener('resize', handleResize);
-    };
-  }, []);
   return (
     <>
       {/* <!-- Header Span --> */}
@@ -46,7 +32,7 @@ const index = () => {
       <section className="contact-section" style={{ border: "1px", backgroundColor: "#CFDBE4", }}>
         <div className="auto-container" >
           {/* <!-- Contact Form --> */}
-          <div className="contact-form default-form" style={{ backgroundColor: "white",borderRight: `300px solid ${borderColor}`, }}>
+          <div className="contact-form default-form" style={{ backgroundColor: "white",borderRight: `300px solid ${borderColor}`, }} >
             <div style={{ display: "flex", width: "135%" }}>
               <div style={{ width: "100%", }}>
                 <h3 style={{ fontSize: "40px" }}>Get In <span style={{ color: "#1F9747" }}>Touch</span></h3>

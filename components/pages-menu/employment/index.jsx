@@ -46,8 +46,8 @@ const index = () => {
                 <div className="auto-container" style={{ height: "30vh" }}>
                     <div className="cotnent-box">
                         <div className="title-box" data-aso-delay="300" data-aos="fade-up">
-                            <h3 style={{ fontSize: "60px" }}>Employment</h3>
-                            <img src="/images/bar.svg" style={{ width: "15%" }} />
+                            <h3 style={{ fontSize: "80px" }}>EMPLOYMENT</h3>
+                            <img src="/images/bar.svg" style={{ width: "25%",marginTop:"20px" }} />
 
                         </div>
 

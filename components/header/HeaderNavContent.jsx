@@ -24,10 +24,7 @@ import { BrowserRouter as Router, Switch, Route, useNavigate } from 'react-route
 
 const HeaderNavContent = () => {
     const router = useRouter();
-    // const navigate = useNavigate();
-    // const handleClick = () => {
-    //     navigate("/");
-    // };
+    
 
     return (
         <>
@@ -379,7 +376,7 @@ const HeaderNavContent = () => {
                     
 
                     <li className={`${isActiveParentChaild(servicesItems, router.asPath) ? "current " : ""} dropdown`}>
-                        <span>About us</span>
+                        <span>About Us</span>
                         <ul>
                             {servicesItems.map((item, i) => (
                                 <li
@@ -395,7 +392,7 @@ const HeaderNavContent = () => {
                     </li>
 
                     
-                    <li><Link href={'/contact'}>Contact</Link></li>
+                    <li><Link href={'/contact'}>Contact Us</Link></li>
 
                 </ul>
             </nav>

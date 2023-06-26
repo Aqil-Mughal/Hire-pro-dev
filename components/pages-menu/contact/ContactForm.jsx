@@ -1,6 +1,6 @@
 const ContactForm = () => {
   return (
-    <form >
+    <form  data-aos="fade-up">
       <div className="column">
         <div className="form-group col-lg-12 col-md-12 col-sm-12" style={{width:"90%"}}>
           <div className="response"></div>

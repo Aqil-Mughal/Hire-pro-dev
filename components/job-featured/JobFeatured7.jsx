@@ -7,7 +7,7 @@ const JobFeatured7 = () => {
       {jobFeatured.slice(0, 5).map((item) => (
         <div className="job-block-five" key={item.id}>
           <div className="inner-box">
-            <div className="content">
+            <div className="content" data-aos="fade-up">
               <span className="company-logo">
                 <img src={item.logo} alt="item brand" />
               </span>

@@ -35,16 +35,16 @@ const RegBanner2 = () => {
          
         >
           <div className="inner-box" style={{ backgroundColor: item.backgroundColor }}>
-            <div className="content">
+            <div className="content" data-aos="fade-right">
               <h3>{item.name}</h3>
               <p>{item.text}</p>
-              <Link href={item.buttonLink} className="theme-btn btn-style-five"style={{ color: item.buttonFontColor }}>
+              <Link href={item.buttonLink} className="theme-btn btn-style-five"style={{ color: item.buttonFontColor }} data-aos="fade-up-right">
               {item.buttonLabel}
               </Link>
               
             </div>
             <figure className="image">
-              <img src={item.avatar} alt="resource" />
+              <img src={item.avatar} alt="resource"data-aos="fade-left"/>
             </figure>
           </div>
         </div>

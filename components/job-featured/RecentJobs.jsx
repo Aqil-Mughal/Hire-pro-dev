@@ -6,7 +6,7 @@ const RecentJobs = () => {
     <>
       {jobFeatured.slice(20, 22).map((item) => (
         <div className="job-block-four" key={item.id}>
-          <div className="inner-box">
+          <div className="inner-box" data-aos="fade-left">
             <ul className="job-other-info">
               {item.jobType.map((val, i) => (
                 <li key={i} className={`${val.styleClass}`}>
@@ -17,7 +17,7 @@ const RecentJobs = () => {
             <span className="company-logo">
               <img src={item.logo} alt="featured job" />
             </span>
-            <span className="company-name">Catalyst</span>
+            <span className="company-name" >Catalyst</span>
             <h4>
               <Link href={`/job-single-v3/${item.id}`}>{item.jobTitle}</Link>
             </h4>

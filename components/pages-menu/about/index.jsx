@@ -46,9 +46,9 @@ const index = () => {
 
       <section
         className="banner-section-nine"
-        style={{ backgroundImage: "url(images/background/about.png)", marginTop:"5%" }}
+        style={{ backgroundImage: "url(images/background/about.png)", marginTop: "5%" }}
       >
-        <div className="auto-container" style={{ height: "30vh",}}>
+        <div className="auto-container" style={{ height: "30vh", }}>
           <div className="cotnent-box">
             <div className="title-box" data-aso-delay="300" data-aos="fade-up">
               <h3>ABOUT AAMANTO TECHNOLOGIES</h3>
@@ -66,13 +66,13 @@ const index = () => {
       </section>
       {/* <!--End Page Title--> */}
       <section className="work-section style-two">
-        <div className="auto-container" style={{backgroundColor:"#ECFFF2"}}>
-          <div className="sec-title text-center">
+        <div className="auto-container" style={{ backgroundColor: "#ECFFF2" }}>
+          <div className="sec-title text-center" data-aos="fade-up" >
             <h2>Our Commitment to Excellence</h2>
             <div className="text" style={{ fontSize: "15px", color: "#959595" }}>
               We Foster Excellence and Empower Growth & Development.</div>
           </div>
-          <div style={{ textAlign: "center", width: "100%", justifyContent: "center", color: "#959595" }}>
+          <div data-aos="fade-up" style={{ textAlign: "center", width: "100%", justifyContent: "center", color: "#959595" }}>
             At our company, we are committed to providing exceptional services that contribute
             to the growth <br />and development of individuals and organizations. While the core of our values remains unchanged,<br />
             we have refined our statement to better reflect our mission and aspirations.
@@ -90,28 +90,12 @@ const index = () => {
         </div>
       </section>
       <section style={{ margin: "150px" }}>
-        <div style={{ }}>
+        <div style={{}}>
           <About11 />
         </div>
 
       </section>
-      <div style={{ display: "flex", justifyContent: "center", margin: "auto", fontSize: "30px", fontWeight: "600", textAlign: "center", lineHeight: "40px", }}>
-      Our unwavering commitment lies in discovering exceptional candidates<br />
-      and matching them with companies that align with their talents,<br />
-      ensuring optimal placements for both parties involved
-    </div>
-      <section className="job-categories">
-        <div className="auto-container">
-          <div className="sec-title text-center">
-            <h2 style={{color:"#1F9747"}}>Popular Job Categories</h2>
-            <div className="text" style={{color:"#1F9747"}}>2020 jobs live - 293 added today.</div>
-          </div>
-
-          <div className="row" data-aos="fade-up">
-            <JobCategorie2 />
-          </div>
-        </div>
-      </section>
+     
       <section
         className="testimonial-section style-two alternate"
         style={{ backgroundImage: "url(images/background/meeting2.png)" }}
@@ -279,4 +263,21 @@ export default index;
 //       </section>
 {/* <!-- End Testimonial Section --> */ }
 
- 
+
+ // <div style={{ display: "flex", justifyContent: "center", margin: "auto", fontSize: "30px", fontWeight: "600", textAlign: "center", lineHeight: "40px", }}>
+      //   Our unwavering commitment lies in discovering exceptional candidates<br />
+      //   and matching them with companies that align with their talents,<br />
+      //   ensuring optimal placements for both parties involved
+      // </div>
+      // <section className="job-categories">
+      //   <div className="auto-container">
+      //     <div className="sec-title text-center">
+      //       <h2 style={{ color: "#1F9747" }}>Popular Job Categories</h2>
+      //       <div className="text" style={{ color: "#1F9747" }}>2020 jobs live - 293 added today.</div>
+      //     </div>
+
+      //     <div className="row" data-aos="fade-up">
+      //       <JobCategorie2 />
+      //     </div>
+      //   </div>
+      // </section>

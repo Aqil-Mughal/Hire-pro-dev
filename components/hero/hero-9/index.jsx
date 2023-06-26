@@ -21,6 +21,7 @@ const index = () => {
       width: '100%',
       border:"1px solid white",
       marginTop:"0",
+      backgroundColor: "linear-gradient(to bottom, rgba(211, 211, 211, 0) 0%, rgba(211, 211, 211, 1) 100%)",
       // display: "block",
       // alignItems: "center",
       // height: 800,
@@ -29,12 +30,15 @@ const index = () => {
       <video className="video1" autoPlay loop muted id='video' style={{
         width: '100%',
         height: "100%",
-        padding:0
+        padding:0,
+        
+
       }}>
         {/* <source src="https://websites-static-assets.s3.us-east-2.amazonaws.com/job-port+1.mp4" type="video/mp4" /> */}
         <source src="images/resource/home1.mp4" type="video/mp4" />
         {/* <source src={Video} type="video/mp4"/> */}
       </video>
+      
       {/* <video src={Video} /> */}
     </div>
       <div className="auto-container">

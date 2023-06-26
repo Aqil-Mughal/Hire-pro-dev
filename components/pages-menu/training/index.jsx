@@ -62,11 +62,11 @@ const index = () => {
             {/* <!--End Page Title--> */}
             <section className="work-section style-two" style={{ backgroundColor: "white" }}>
                 <div className="auto-container">
-                    <div className="sec-title text-center">
+                    <div className="sec-title text-center" data-aos="fade-up">
                         <h2>EMPLOYMENT TRANING</h2>
                     </div>
                     <div style={{ display: "flex" }}>
-                        <div style={{ textAlign: "center", width: "90%", color: "#959595",marginTop:"2%" }}>
+                        <div data-aos="fade-up" style={{ textAlign: "center", width: "90%", color: "#959595",marginTop:"2%" }}>
                             The training provided by [ company name ] to temporary workers can vary
                             in type and scope, depending on the industry and specific job role. However,
                             our agency is dedicated to offering comprehensive training programs to ensure 
@@ -109,7 +109,7 @@ const index = () => {
 
             </section>
             <section style={{ backgroundImage: "url(images/background/meeting2.png)", height: "60vh", padding: "50px", display: "flex", justifyContent: "center" }}>
-                <div style={{ color: "white", margin: "auto", width: "60%", textAlign: "center",fontSize:"25px",lineHeight:"30px" }}>
+                <div data-aos="fade-up" style={{ color: "white", margin: "auto", width: "60%", textAlign: "center",fontSize:"25px",lineHeight:"30px" }}>
                 It's important for both the staffing agency and the temporary worker to communicate about
                  the level of training required for the specific job role. Temporary workers should also ask 
                  questions and seek clarification if they are unsure about any aspect of their job duties or training.

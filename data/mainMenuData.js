@@ -27,30 +27,30 @@ export const homeItems = [
     {
         id: 2,
         items: [
+            // {
+            //     name: "Home",
+            //     routePath: "/home-9",
+            // },
+            // {
+            //     name: "Home Page 06",
+            //     routePath: "/home-6",
+            // },
+            // {
+            //     name: "Home Page 07",
+            //     routePath: "/home-7",
+            // },
+            // {
+            //     name: "Home Page 08",
+            //     routePath: "/home-8",
+            // },
             {
                 name: "Home",
-                routePath: "/home-9",
-            },
-            {
-                name: "Home Page 06",
-                routePath: "/home-6",
-            },
-            {
-                name: "Home Page 07",
-                routePath: "/home-7",
-            },
-            {
-                name: "Home Page 08",
-                routePath: "/home-8",
-            },
-            {
-                name: "Home Page 09",
                 routePath: "/",
             },
-            {
-                name: "Home Page 10",
-                routePath: "/home-10",
-            },
+            // {
+            //     name: "Home Page 10",
+            //     routePath: "/home-10",
+            // },
         ],
     },
     // {
@@ -78,19 +78,19 @@ export const homeItems = [
     //         },
     //     ],
     // },
-    {
-        id: 4,
-        items: [
-            {
-                name: "Home Page 16",
-                routePath: "/home-16",
-            },
-            {
-                name: "Home Page 17",
-                routePath: "/home-17",
-            },
-        ],
-    },
+    // {
+    //     id: 4,
+    //     items: [
+    //         {
+    //             name: "Home Page 16",
+    //             routePath: "/home-16",
+    //         },
+    //         {
+    //             name: "Home Page 17",
+    //             routePath: "/home-17",
+    //         },
+    //     ],
+    // },
 ];
 
 export const findJobItems = [

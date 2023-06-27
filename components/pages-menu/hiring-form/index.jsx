@@ -121,7 +121,7 @@ const index = () => {
 
             <div>
                 <div className="hiring-form-banner-container">
-                    <div className="hiring-form-banner-content">
+                    <div className="hiring-form-banner-content" data-aos="fade-up">
                         <h1>FILL OUT THE HIRING FORM</h1>
                     </div>
                 </div>
@@ -129,7 +129,7 @@ const index = () => {
                 <section className="contact-section" >
                     <div className="auto-container" style={{ backgroundColor: "#ECFFF2",borderRadius:"20px" }}>
 
-                        <div className="hiring-form default-form" >
+                        <div className="hiring-form default-form" data-aos="fade-up">
                             <form>
                                 <div className="row">
                                     <div className="form-group col-lg-12 col-md-12 col-sm-12">

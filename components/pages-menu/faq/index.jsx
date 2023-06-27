@@ -46,8 +46,8 @@ const index = () => {
     
       {/* <!--End Page Title--> */}
 
-      <section className="faqs-section">
-        <div className="auto-container">
+      <section className="faqs-section" >
+        <div className="auto-container" style={{ backgroundColor: "#ECFFF2",borderRadius:"30px" ,padding:"25px"}} >
         
           {/* <!--Accordian Box--> */}
           <ul className="accordion-box">

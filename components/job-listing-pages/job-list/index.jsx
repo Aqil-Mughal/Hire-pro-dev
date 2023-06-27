@@ -55,16 +55,17 @@ const index = () => {
       <Header />
       <MobileMenu />
 
-      <section className="page-title style-two"
+      <section className="page-title style-two" data-aos="fade-up"
       style={{ backgroundImage: "url(images/background/search-jobs.png)",}}
       >
-        <div className="auto-container">
+        <div className="auto-container" data-aos="fade-down">
           <>
-          <h2 style={{color:"white",margin:"40px"}}>SEARCH JOB ACCORDING TO YOUR PREVRENCE
+          <h2 style={{color:"white",margin:"40px"}}>
+          SEARCH JOB ACCORDING TO YOUR PREVRENCE
           </h2>
             <div className="job-search-form">
               <div className="row">
-                <div className="form-group col-lg-4 col-md-12 col-sm-12">
+                <div className="form-group col-lg-4 col-md-12 col-sm-12" data-aos="fade-up-right">
                   <>
                     <input
                       type="text"
@@ -73,7 +74,8 @@ const index = () => {
                       value={titleState}
                       onChange={(e) => setTitleState(e.target.value)}
                     />
-                    <span className="icon flaticon-search-3"></span>
+                    <span className="icon flaticon-search-3">
+                    </span>
                   </>
                 </div>
 
@@ -105,7 +107,7 @@ const index = () => {
                   </>
                 </div>
 
-                <div className="form-group col-lg-4 col-md-12 col-sm-12 location">
+                <div className="form-group col-lg-4 col-md-12 col-sm-12 location" data-aos="fade-down">
                   <>
                     <select
                       className="form-select"
@@ -141,7 +143,7 @@ const index = () => {
                   Loading...
                 </button>
                 :
-                <button onClick={handleFindJobs} className="theme-btn btn-style-two" style={{backgroundColor:"#FFFFFF",color:"#1F9747"}}>
+                <button onClick={handleFindJobs} data-aos="fade-up" className="theme-btn btn-style-two" style={{backgroundColor:"#FFFFFF",color:"#1F9747"}}>
                   Find Jobs
                 </button>
               }

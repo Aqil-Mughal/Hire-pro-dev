@@ -81,14 +81,14 @@ const index = () => {
             <MobileMenu />
 
             <div>
-                <div className="hiring-form-banner-container">
-                    <div className="hiring-form-banner-content">
+                <div className="hiring-form-banner-container" data-aos="fade-up">
+                    <div className="hiring-form-banner-content" data-aos="fade-down">
                         <h1>SUBMIT YOUR RESUME</h1>
                     </div>
                 </div>
 
-                <section className="contact-section" style={{ backgroundColor: "#ECFFF2" }}>
-                    <div className="auto-container" >
+                <section className="contact-section" data-aos="fade-down">
+                    <div className="auto-container" style={{ backgroundColor: "#ECFFF2",borderRadius:"30px" ,padding:"25px"}}  >
 
                         <div className="hiring-form default-form" >
                             <form>
@@ -108,6 +108,7 @@ const index = () => {
                                             className="username"
                                             placeholder="First Name *"
                                             required
+                                            style={{ backgroundColor: "#ECFFF2", borderColor: "#959595" }}
                                         />
                                     </div>
 
@@ -121,6 +122,7 @@ const index = () => {
                                             className="username"
                                             placeholder="Middle Name"
                                             required
+                                            style={{ backgroundColor: "#ECFFF2", borderColor: "#959595" }}
                                         />
                                     </div>
 
@@ -134,6 +136,7 @@ const index = () => {
                                             className="username"
                                             placeholder="Last Name *"
                                             required
+                                            style={{ backgroundColor: "#ECFFF2", borderColor: "#959595" }}
                                         />
                                     </div>
 
@@ -147,6 +150,7 @@ const index = () => {
                                             className="username"
                                             placeholder="Email *"
                                             required
+                                            style={{ backgroundColor: "#ECFFF2", borderColor: "#959595" }}
                                         />
                                     </div>
 
@@ -160,6 +164,7 @@ const index = () => {
                                             className="username"
                                             placeholder="Phone Number *"
                                             required
+                                            style={{ backgroundColor: "#ECFFF2", borderColor: "#959595" }}
                                         />
                                     </div>
 
@@ -173,6 +178,7 @@ const index = () => {
                                             className="username"
                                             placeholder="City *"
                                             required
+                                            style={{ backgroundColor: "#ECFFF2", borderColor: "#959595" }}
                                         />
                                     </div>
 
@@ -184,6 +190,7 @@ const index = () => {
                                             defaultValue={formData.jobSector}
                                             onChange={(e) => setFormData({ ...formData, [e.target.name]: e.target.value })}
                                             required
+                                            style={{ backgroundColor: "#ECFFF2", borderColor: "#959595" }}
                                         >
                                             <option value="">Select a Job Sector</option>
                                             <option value="General Labour">General Labour</option>
@@ -215,10 +222,11 @@ const index = () => {
                                     <div className="col-lg-4 col-md-12 col-sm-12 form-group">
                                         <label>Upload Resume *</label>
                                         <div className="cus-file-input-container">
-                                            <input type="text" className="username cus-file-input" value={formData.resume ? formData.resume.name : ''} readOnly placeholder="No file selected" />
+                                            <input type="text" className="username cus-file-input" value={formData.resume ? formData.resume.name : ''} readOnly placeholder="No file selected"  style={{ backgroundColor: "#ECFFF2", borderColor: "#959595" }}/>
                                             <label htmlFor="file" className="theme-btn btn-style-one cus-file-input-button">Browse</label>
                                             <input type="file" id="file" name="resume" className="cus-file-input-hidden"
                                                 onChange={(e) => setFormData({ ...formData, resume: e.target.files[0] })}
+                                                style={{ backgroundColor: "#ECFFF2", borderColor: "#959595" }}
                                             />
                                         </div>
                                     </div>
@@ -236,8 +244,9 @@ const index = () => {
                                                 <button
                                                     className="theme-btn btn-style-ten cus-mr-10"
                                                     id="submit"
-                                                    style={{ borderColor: "#1F9747", color: "#1F9747" }}
+                                                    style={{ borderColor: "#1F9747", color: "#1F9747",backgroundColor:"#ECFFF2FE" }}
                                                     onClick={handleFormClear}
+                                                    
                                                 >
                                                     Clear
                                                 </button>

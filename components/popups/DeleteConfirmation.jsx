@@ -9,7 +9,7 @@ const DeleteConfirmation = ({ show, heading, text, onClickSuccess, onClickCancel
       show={show}
       className='jp-modal'
     >
-      <Modal.Header id="contained-modal-title-vcenter1"><h3>{heading}</h3></Modal.Header>
+      <Modal.Header id="contained-modal-title-vcenter1" className="cus-bgg-cw"><h3>{heading}</h3></Modal.Header>
       <Modal.Body>{text}</Modal.Body>
       <Modal.Footer>
         <Button variant='success' onClick={onClickSuccess}>Delete</Button>

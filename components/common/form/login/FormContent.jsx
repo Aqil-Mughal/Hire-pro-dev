@@ -132,7 +132,7 @@ const FormContent = () => {
         show={openErrorModal}
         className="jp-modal"
       >
-        <Modal.Header id="contained-modal-title-vcenter1">
+        <Modal.Header id="contained-modal-title-vcenter1" className="cus-bgg-cw">
           <h3>Message</h3>
         </Modal.Header>
         <Modal.Body style={{ overflow: 'hidden' }}>Invalid Credentials.</Modal.Body>

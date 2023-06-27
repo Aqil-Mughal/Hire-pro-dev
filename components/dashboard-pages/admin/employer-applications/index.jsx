@@ -169,7 +169,7 @@ const Index = () => {
               show={openViewModal}
               className='jp-modal'
             >
-              <Modal.Header id="contained-modal-title-vcenter">
+              <Modal.Header id="contained-modal-title-vcenter" className="cus-bgg-cw">
                 <h3>Employer Application Details</h3>
               </Modal.Header>
               <Modal.Body>

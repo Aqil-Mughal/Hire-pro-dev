@@ -184,7 +184,7 @@ const Index = () => {
                 show={openViewModal}
                 className='jp-modal'
               >
-                <Modal.Header id="contained-modal-title-vcenter">
+                <Modal.Header id="contained-modal-title-vcenter" className="cus-bgg-cw">
                   <h3>View Job Details</h3>
                 </Modal.Header>
                 <Modal.Body>
@@ -345,7 +345,7 @@ const Index = () => {
                 show={openDeleteModal}
                 className='jp-modal'
               >
-                <Modal.Header id="contained-modal-title-vcenter1"><h3>Delete Job</h3></Modal.Header>
+                <Modal.Header id="contained-modal-title-vcenter1" className="cus-bgg-cw"><h3>Delete Job</h3></Modal.Header>
                 <Modal.Body>Are you sure you want to delete the job with Ref# {deleteID}?</Modal.Body>
                 <Modal.Footer>
                   <Button variant='success' disabled={buttonDisabled} onClick={onClickDeleteHandler}>Delete</Button>

@@ -4,9 +4,9 @@ import { APPLY_FOR_JOB_WITHOUT_JOB_ID } from "../../../data/graphQL/Mutations"
 import { Modal, Button } from "react-bootstrap"
 import Link from "next/link"
 import CallToAction from "../../call-to-action/CallToAction"
-import DefaulHeader from "../../header/DefaulHeader"
+import Header from "../../home-9/Header"
 import MobileMenu from "../../header/MobileMenu"
-import FooterDefault from "../../footer/common-footer";
+import JpFooter from "../../footer/Jpfooter"
 
 const index = () => {
 
@@ -77,7 +77,7 @@ const index = () => {
     return (
         <>
             <span className="header-span"></span>
-            <DefaulHeader />
+            <Header />
             <MobileMenu />
 
             <div>
@@ -87,10 +87,10 @@ const index = () => {
                     </div>
                 </div>
 
-                <section className="contact-section">
-                    <div className="auto-container">
+                <section className="contact-section" style={{ backgroundColor: "#ECFFF2" }}>
+                    <div className="auto-container" >
 
-                        <div className="hiring-form default-form">
+                        <div className="hiring-form default-form" >
                             <form>
                                 <div className="row">
                                     <h4 className="">Company Details</h4>
@@ -236,6 +236,7 @@ const index = () => {
                                                 <button
                                                     className="theme-btn btn-style-ten cus-mr-10"
                                                     id="submit"
+                                                    style={{ borderColor: "#1F9747", color: "#1F9747" }}
                                                     onClick={handleFormClear}
                                                 >
                                                     Clear
@@ -255,8 +256,9 @@ const index = () => {
                         </div>
                     </div>
                 </section>
-
-                <CallToAction />
+                <div style={{ margin: "5%" }}>
+                    <CallToAction />
+                </div>
 
 
 
@@ -304,7 +306,7 @@ const index = () => {
 
             </div>
 
-            <FooterDefault footerStyle="alternate5" />
+            <JpFooter />
         </>
     )
 }

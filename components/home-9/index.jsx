@@ -97,7 +97,7 @@ const index = () => {
 
       <section
         className="testimonial-section style-two alternate"
-        style={{ backgroundImage: "url(images/background/meeting2.png)" }}
+        style={{ backgroundImage: "url(images/background/meeting2.png)" ,backgroundSize:"cover"}}
       >
         <div className="auto-container">
           {/* <!-- Sec Title --> */}
@@ -108,7 +108,7 @@ const index = () => {
             </div>
           </div>
 
-          <div className="carousel-outer" data-aos="fade-up">
+          <div className="carousel-outer" data-aos="fade-up" style={{height:"40vh"}}>
             {/* <!-- Testimonial Carousel --> */}
             <div className="testimonial-carousel-three gap-x25">
               <Testimonia4 />

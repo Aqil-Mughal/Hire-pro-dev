@@ -1,4 +1,4 @@
-/* @font-face {
+@font-face {
     font-family: 'Sofia Pro';
     src: url('SofiaPro.eot');
     src: url('SofiaPro.eot?#iefix') format('embedded-opentype'),
@@ -9,16 +9,4 @@
     font-weight: normal;
     font-style: normal;
     font-display: swap;
-} */
-
-@font-face {
-    font-family: 'Gilroy';
-    src: url('gilroy/Gilroy-Regular.eot');
-    src: local('Gilroy Regular'), local('Gilroy-Regular'),
-        url('gilroy/Gilroy-Regular.eot?#iefix') format('embedded-opentype'),
-        url('gilroy/Gilroy-Regular.woff2') format('woff2'),
-        url('gilroy/Gilroy-Regular.woff') format('woff'),
-        url('gilroy/Gilroy-Regular.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
 }

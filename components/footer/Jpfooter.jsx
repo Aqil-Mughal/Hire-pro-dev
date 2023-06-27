@@ -45,7 +45,7 @@ const index = ({ footerStyle = "" }) => {
                       </Link>
                     </li>
                     <li>
-                      <Link href="/contract" style={{ color: "white" }}>
+                      <Link href="/hiring-form" style={{ color: "white" }}>
                         Employers
                       </Link>
                     </li>
@@ -55,8 +55,8 @@ const index = ({ footerStyle = "" }) => {
                       </Link>
                     </li>
                     <li>
-                      <Link href="/why-choose-us" style={{ color: "white" }}>
-                        Why Choose Us
+                      <Link href="/about" style={{ color: "white" }}>
+                        About us
                       </Link>
                     </li>
                   </ul>

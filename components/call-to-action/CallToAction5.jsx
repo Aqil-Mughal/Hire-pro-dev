@@ -3,7 +3,7 @@ import Link from "next/link";
 const CallToAction5 = () => {
   return (
     <section
-      className=""
+      className="background"
       style={{ backgroundImage: "url(images/background/meeting2.png)",textAlign:"center",height:"50vh", }}
     >
       <div className="auto-container" data-aos="fade-up" style={{paddingTop:"8%"}} >

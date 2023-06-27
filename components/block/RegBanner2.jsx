@@ -44,7 +44,7 @@ const RegBanner2 = () => {
               
             </div>
             <figure className="image">
-              <img src={item.avatar} alt="resource"data-aos="fade-left"/>
+              <img src={item.avatar} alt="resource" data-aos="fade-left"/>
             </figure>
           </div>
         </div>

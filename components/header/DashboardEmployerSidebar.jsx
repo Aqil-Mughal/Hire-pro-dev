@@ -16,7 +16,7 @@ const DashboardEmployerSidebar = () => {
     };
 
     return (
-        <div className={`user-sidebar ${menu ? "sidebar_open" : ""}`}>
+        <div className={`user-sidebar ${menu ? "sidebar_open" : ""}`} >
             {/* Start sidebar close icon */}
             <div className="pro-header text-end pb-0 mb-0 show-1023">
                 <div className="fix-icon" onClick={menuToggleHandler}>
@@ -25,8 +25,8 @@ const DashboardEmployerSidebar = () => {
             </div>
             {/* End sidebar close icon */}
 
-            <div className="sidebar-inner">
-                <ul className="navigation">
+            <div className="sidebar-inner" >
+                <ul className="navigation" >
                     {employerMenuData.map((item) => (
                         <li
                             className={`${

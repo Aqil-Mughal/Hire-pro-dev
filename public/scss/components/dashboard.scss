@@ -51,6 +51,7 @@
   content: "\f107";
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
+  color: #1F9747;
   border: 0;
 }
 
@@ -104,13 +105,13 @@
 
 .dashboard-option .dropdown-menu li.active a,
 .dashboard-option .dropdown-menu li:hover a {
-  color: var(--primary-color);
-  background: rgba(25, 103, 210, 0.1);
+  color: #1F9747;
+  background: #ECFFF2;
 }
 
 .dashboard-option .dropdown-menu li.active a i,
 .dashboard-option .dropdown-menu li:hover a i {
-  color: var(--primary-color);
+  color: #1F9747;
 }
 
 .mm-panels {
@@ -1032,13 +1033,14 @@ User Sidebar
 
 .user-sidebar .navigation>li.active>a,
 .user-sidebar .navigation>li:hover>a {
-  color: var(--primary-color);
-  background: rgba(25, 103, 210, 0.1);
+  color: #1F9747;
+  // background: rgba(25, 103, 210, 0.1);
+  background: #ECFFF2;
 }
 
 .user-sidebar .navigation li.active a i,
 .user-sidebar .navigation li:hover a i {
-  color: var(--primary-color);
+  color: #1F9747;
 }
 
 .place.sky {

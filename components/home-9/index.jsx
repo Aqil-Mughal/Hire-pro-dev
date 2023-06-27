@@ -63,15 +63,14 @@ const index = () => {
             </div>
             {/* End .featured-column */}
 
-            <div className="recent-column col-xl-3 col-lg-12 col-md-12 col-sm-12">
+            {/* <div className="recent-column col-xl-3 col-lg-12 col-md-12 col-sm-12">
               <div className="sec-title">
                 <h2>Recent Jobs</h2>
                 <div className="text">Know your worth and find the job</div>
               </div>
-              {/* En .sect-title */}
 
               <RecentJobs />
-            </div>
+            </div> */}
             {/* End .recent-column */}
           </div>
           {/* End .row */}

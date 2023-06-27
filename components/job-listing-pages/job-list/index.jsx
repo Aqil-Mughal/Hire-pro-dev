@@ -6,18 +6,22 @@ import { useState } from "react";
 import { useQuery } from "@apollo/client";
 import { GET_LOCATION_DROPDOWN, JOBS_BY_JOB_TITLE_LOCATION_DISTANCE_JOB_SECTOR } from "../../../data/graphQL/Queries";
 import Select, { components, PlaceholderProps } from "react-select";
+import { useRouter } from "next/router";
 
 const index = () => {
 
-  const [titleState, setTitleState] = useState("")
-  const [locationState, setLocationState] = useState("Canada")
-  const [rangeState, setRangeState] = useState(5000)
+  let options = [];
+
+  const router = useRouter();
+  const { title, location, range } = router.query;
+
+  const [titleState, setTitleState] = useState(title)
+  const [locationState, setLocationState] = useState(location)
+  const [rangeState, setRangeState] = useState(range || 5000)
   const [jobSectorState, setJobSectorState] = useState("")
   const [btnLoading, setBtnLoading] = useState(false)
 
-  const getLocationDropdown = useQuery(GET_LOCATION_DROPDOWN, {
-    variables: { address: locationState }
-  })
+  const getLocationDropdown = useQuery(GET_LOCATION_DROPDOWN, { variables: { address: locationState } })
 
   const jobByJobInfo = useQuery(JOBS_BY_JOB_TITLE_LOCATION_DISTANCE_JOB_SECTOR)
 
@@ -38,7 +42,7 @@ const index = () => {
   console.log(jobByJobInfo)
   console.log({ titleState, locationState, jobSectorState })
 
-  const options = getLocationDropdown?.data?.addressList.map((location) => ({
+  options = getLocationDropdown?.data?.addressList.map((location) => ({
     value: location,
     label: location,
   })) || [];
@@ -77,26 +81,20 @@ const index = () => {
                     /> */}
                     <Select
                       options={options}
-                      // inputValue={locationState}
-                      value={locationState}
-                      // onInputChange={(e) => setLocationState(e)}
-                      onChange={(e) => setLocationState(e)}
-                      // onClick={handleChange}
+                      inputValue={locationState}
+                      onInputChange={(e) => setLocationState(e)}
+                      onChange={(e) => setLocationState(e.value)}
                       placeholder="Location or postal code"
-                    // placeholder: (base)
-                    styles={{
-                      control: (baseStyles, state) => ({
-                        ...baseStyles,
-                        margin: 0,
-                        padding: 0,
-                    //     background: "rgba(39, 167, 223, 0.1)",
-                        border: "none",
-                        paddingLeft: "30px",
-                        height: 60
-                    //     borderRadius: "8px",
-
-                      }),
-                    }}
+                      styles={{
+                        control: (baseStyles, state) => ({
+                          ...baseStyles,
+                          margin: 0,
+                          padding: 0,
+                          border: "none",
+                          paddingLeft: "30px",
+                          height: 60
+                        }),
+                      }}
                     />
                     <span className="icon flaticon-map-locator"></span>
                   </>
@@ -107,7 +105,6 @@ const index = () => {
                     <select
                       className="form-select"
                       name="jobSectorState"
-                      defaultValue={jobSectorState}
                       onChange={(e) => setJobSectorState(e.target.value)}
                     >
                       <option value="">Job category</option>
@@ -203,7 +200,7 @@ const index = () => {
         </div>
       </section>
 
-      <nav className="ls-pagination">
+      {/* <nav className="ls-pagination">
         <ul>
           <li className="prev">
             <a href="#">
@@ -227,7 +224,7 @@ const index = () => {
             </a>
           </li>
         </ul>
-      </nav>
+      </nav> */}
 
       <FooterDefault footerStyle="alternate5" />
     </>

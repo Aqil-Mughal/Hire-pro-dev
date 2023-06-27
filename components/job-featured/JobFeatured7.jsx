@@ -1,58 +1,80 @@
 import Link from "next/link";
 import jobFeatured from "../../data/job-featured";
+import { useQuery } from "@apollo/client";
+import { GET_ALL_AGENCY_JOB_POSTS } from "../../data/graphQL/Queries";
 
 const JobFeatured7 = () => {
+
+  //API
+  const getJobs = useQuery(GET_ALL_AGENCY_JOB_POSTS, {
+    variables: {
+      skip: 0,
+      take: 4,
+    },
+  });
+
   return (
     <>
-      {jobFeatured.slice(0, 5).map((item) => (
-        <div className="job-block-five" key={item.id}>
-          <div className="inner-box">
-            <div className="content" data-aos="fade-up">
-              <span className="company-logo">
-                <img src={item.logo} alt="item brand" />
-              </span>
-              <h4>
-                <Link href={`/job-single-v5/${item.id}`}>{item.jobTitle}</Link>
-              </h4>
-              <ul className="job-info">
-                <li>
-                  <span className="icon flaticon-briefcase"></span>
-                  {item.company}
-                </li>
-                {/* compnay info */}
-                <li>
-                  <span className="icon flaticon-map-locator"></span>
-                  {item.location}
-                </li>
-                {/* location info */}
-                <li>
-                  <span className="icon flaticon-clock-3"></span> {item.time}
-                </li>
-                {/* time info */}
-                <li>
-                  <span className="icon flaticon-money"></span> {item.salary}
-                </li>
-                {/* salary info */}
-              </ul>
-              {/* End .job-info */}
-            </div>
-            <ul className="job-other-info">
-              {item.jobType.slice(0, 1).map((val, i) => (
-                <li key={i} className={`${val.styleClass}`} style={{backgroundColor:"#E1F2E5",color:"#3AAB58"}}>
-                  {val.type}
-                </li>
-              ))}
-            </ul>
-            <Link
-              href={`/job-single-v5/${item.id}`}
-              className="theme-btn btn-style-eight"
-              style={{backgroundColor:"#1F9747",color:"white"}}
-            >
-              Apply Now
-            </Link>
+      {getJobs?.loading ? (
+        <div className="d-flex justify-content-center my-5">
+          <div className="spinner-border" role="status">
+            <span className="sr-only">Loading...</span>
           </div>
         </div>
-      ))}
+      ) : getJobs.data?.AllAgencyJobPosts.length === 0 ? (
+        <div className="d-flex justify-content-center my-5">
+          <span>No active jobs.</span>
+        </div>
+      ) : (
+        getJobs?.data?.AllAgencyJobPosts.map((row, key) => (
+          <div className="job-block-five" key={key}>
+            <div className="inner-box">
+              <div className="content">
+                {/* <span className="company-logo">
+                <img src={item.logo} alt="item brand" />
+              </span> */}
+                <h4>
+                  <Link href={`/job-details/${row.agency_job_post_job_id}`}>{row.job_title}</Link>
+                </h4>
+                <ul className="job-info">
+                  {/* <li>
+                  <span className="icon flaticon-briefcase"></span>
+                  {item.company}
+                </li> */}
+                  <li>
+                    <span className="icon flaticon-map-locator"></span>
+                    {row.country}
+                  </li>
+                  {/* <li>
+                  <span className="icon flaticon-clock-3"></span> {item.time}
+                </li> */}
+                  {/* <li>
+                    <span className="icon flaticon-money"></span> {item.salary}
+                  </li> */}
+                </ul>
+                <ul className="" style={{paddingRight: "50px"}}>
+                  <li>
+                    {row.job_description.length > 40
+                      ? row.job_description.substr(
+                        0,
+                        row.job_description.length - 150
+                      ) + "..."
+                      : row.job_description}
+                  </li>
+                </ul>
+              </div>
+              <Link
+                href={`/job-details/${row.agency_job_post_job_id}`}
+                className="theme-btn btn-style-eight"
+                style={{ backgroundColor: "#1F9747", color: "white" }}
+              >
+                Apply Now
+              </Link>
+
+            </div>
+          </div >
+        ))
+      )}
     </>
   );
 };

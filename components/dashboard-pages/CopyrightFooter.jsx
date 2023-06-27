@@ -2,15 +2,16 @@ const CopyrightFooter = () => {
   return (
     <div className="copyright-text">
       <p>
-        © {new Date().getFullYear()} Superio by{" "}
+        {/* © {new Date().getFullYear()} Superio by{" "} */}
+        Made by{" "}
         <a
-          href="https://themeforest.net/user/ib-themes"
+          href=""
           target="_blank"
           rel="noopener noreferrer"
         >
-          ib-themes
+          Aamanto Tecnologies
         </a>
-        . All Right Reserved.
+        . All Rights Reserved © 2023.
       </p>
     </div>
   );

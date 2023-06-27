@@ -6,6 +6,7 @@ const AboutBlock = () => {
       title: "Strong Employer Branding",
       bgColor: "-orange",
       text: `Develop and enhance your employer brand to attract and retain top talent.`,
+      
     },
     {
       id: 2,
@@ -33,13 +34,13 @@ const AboutBlock = () => {
     <>
       {blockContent.map((item) => (
         <div className="col-lg-6" key={item.id}>
-          <div className="icon-side -type-1">
+          <div className="icon-side -type-1" data-aos="fade-right" >
             <div className={`icon-wrap ${item.bgColor}`}>
-              <img src={item.icon} style={{width:"40px"}} alt="image" />
+              <img src={item.icon} style={{width:"40px"}} alt="image" data-aos="fade-left" />
             </div>
 
             <div className="content">
-              <h4 className="title">{item.title}</h4>
+              <h4  style={{color:"#1F9747"}}className="title">{item.title}</h4>
               <p className="text" style={{fontSize:"14px",lineHeight:"19px"}}>{item.text}</p>
             </div>
           </div>

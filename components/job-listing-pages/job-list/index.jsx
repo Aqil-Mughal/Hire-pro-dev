@@ -1,5 +1,5 @@
-import FooterDefault from "../../footer/common-footer";
-import DefaulHeader from "../../header/DefaulHeader";
+import JpFooter from "../../footer/Jpfooter";
+import Header from "../../home-9/Header";
 import MobileMenu from "../../header/MobileMenu";
 import Link from "next/link";
 import { useState } from "react";
@@ -7,6 +7,7 @@ import { useQuery } from "@apollo/client";
 import { GET_LOCATION_DROPDOWN, JOBS_BY_JOB_TITLE_LOCATION_DISTANCE_JOB_SECTOR } from "../../../data/graphQL/Queries";
 import Select, { components, PlaceholderProps } from "react-select";
 import { useRouter } from "next/router";
+import CallToAction from "../../call-to-action/CallToAction";
 
 const index = () => {
 
@@ -51,12 +52,16 @@ const index = () => {
   return (
     <>
       <span className="header-span"></span>
-      <DefaulHeader />
+      <Header />
       <MobileMenu />
 
-      <section className="page-title style-two">
+      <section className="page-title style-two"
+      style={{ backgroundImage: "url(images/background/search-jobs.png)",}}
+      >
         <div className="auto-container">
           <>
+          <h2 style={{color:"white",margin:"40px"}}>SEARCH JOB ACCORDING TO YOUR PREVRENCE
+          </h2>
             <div className="job-search-form">
               <div className="row">
                 <div className="form-group col-lg-4 col-md-12 col-sm-12">
@@ -136,7 +141,7 @@ const index = () => {
                   Loading...
                 </button>
                 :
-                <button onClick={handleFindJobs} className="theme-btn btn-style-two">
+                <button onClick={handleFindJobs} className="theme-btn btn-style-two" style={{backgroundColor:"#FFFFFF",color:"#1F9747"}}>
                   Find Jobs
                 </button>
               }
@@ -225,10 +230,13 @@ const index = () => {
           </li>
         </ul>
       </nav> */}
-
-      <FooterDefault footerStyle="alternate5" />
-    </>
-  );
-};
-
-export default index;
+      <div style={{ margin: "5%" }}>
+                <CallToAction />
+            </div>
+      <JpFooter />
+      </>
+      );
+    };
+    
+    export default index;
+    // <FooterDefault footerStyle="alternate5" />

@@ -70,8 +70,8 @@ const Block1 = () => {
   return (
     <>
       {blockContent.map((item) => (
-        <div className="work-block col-lg-4 col-md-6 col-sm-12" key={item.id} style={{marginTop:"2%"}} >
-          <div className="inner-box" style={{borderRadius:"15px",}}>
+        <div className="work-block col-lg-4 col-md-6 col-sm-12" key={item.id} style={{marginTop:"2%"}}  data-aos="fade-down">
+          <div className="inner-box" style={{borderRadius:"15px",}} data-aos="fade-up">
             <h5 style={{textAlign:"left"}}>{item.badge}</h5>
             <h5 style={{textAlign:"left",marginTop:"8%"}}>{item.title}</h5>
             <p style={{textAlign:"left",marginTop:"8%",color:"#525252"}}>{item.text}</p>

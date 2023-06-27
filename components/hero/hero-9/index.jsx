@@ -21,20 +21,23 @@ const index = () => {
       width: '100%',
       border:"1px solid white",
       marginTop:"0",
+      backgroundColor: "linear-gradient(to bottom, rgba(211, 211, 211, 0) 0%, rgba(211, 211, 211, 1) 100%)",
       // display: "block",
       // alignItems: "center",
       // height: 800,
       // backgroundImage: "linear-gradient(180deg,hsla(0,0%,100%,0) -50%,rgba(0,0,0,.8))"
     }}>
-      <video className="video1" autoPlay loop muted id='video' style={{
-        width: '100%',
-        height: "100%",
-        padding:0
-      }}>
-        {/* <source src="https://websites-static-assets.s3.us-east-2.amazonaws.com/job-port+1.mp4" type="video/mp4" /> */}
-        <source src="images/resource/home1.mp4" type="video/mp4" />
-        {/* <source src={Video} type="video/mp4"/> */}
-      </video>
+    <div style={{ position: 'relative', width: '100%', height: '100%' }}>
+  <video className="video1" autoPlay loop muted id='video' style={{ width: '100%', height: '100%', padding: 0 }}>
+    {/* <source src="https://websites-static-assets.s3.us-east-2.amazonaws.com/job-port+1.mp4" type="video/mp4" /> */}
+    <source src="images/resource/home1.mp4" type="video/mp4" />
+    {/* <source src={Video} type="video/mp4"/> */}
+  </video>
+
+  <img src="images/resource/overlay-image.png" alt="Overlay Image" style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%' }} />
+</div>
+
+      
       {/* <video src={Video} /> */}
     </div>
       <div className="auto-container">
@@ -73,3 +76,7 @@ export default index;
 //             <Funfact2 />
 //           </div>
 //         </div>
+
+
+
+// 

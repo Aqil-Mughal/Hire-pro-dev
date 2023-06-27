@@ -9,13 +9,14 @@ const Block4 = () => {
             <img
               src="images/resource/image7.png"
               alt="resources about block"
+              data-aos="fade-right"
             />
           </figure>
         </div>
         {/* End imag-column */}
 
         <div className="content-column">
-          <div className="inner-column wow fadeInUp">
+          <div className="inner-column" data-aos="fade-right">
             <div className="sec-title">
               <h2>Need for talent acquisition?  </h2>
               <div className="text">

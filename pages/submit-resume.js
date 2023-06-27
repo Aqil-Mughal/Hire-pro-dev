@@ -5,7 +5,7 @@ import SubmitResumeForm from '../components/pages-menu/submit-resume'
 const index = () => {
     return (
         <>
-            <Seo pageTitle="Hiring Form" />
+            <Seo pageTitle="Submit Resume" />
             <SubmitResumeForm />
         </>
     );

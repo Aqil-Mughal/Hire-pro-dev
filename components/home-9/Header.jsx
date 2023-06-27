@@ -30,7 +30,7 @@ const Header = () => {
           <div className="nav-outer">
             <div className="logo-box">
               <div className="logo" >
-                <Link href="/home-9">
+                <Link href="/home">
                   <img src="/images/icons/OBJECTS.png" style={{ width: "70%", height: "6vh", }} />
                 </Link>
               </div>

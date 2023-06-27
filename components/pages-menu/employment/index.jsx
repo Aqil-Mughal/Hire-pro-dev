@@ -63,10 +63,10 @@ const index = () => {
             <section className="work-section style-two" style={{backgroundColor:"white"}}>
                 <div className="auto-container">
                     <div className="sec-title text-center">
-                        <h2>EMPLOYMENT CONTRACTS</h2>
+                        <h2 data-aos="fade-up">EMPLOYMENT CONTRACTS</h2>
                     </div>
                     <div style={{display:"flex"}}>
-                    <div style={{ textAlign: "center", width: "90%",margin:"auto", color: "#959595" }}>
+                    <div  data-aos="fade-up" style={{ textAlign: "center", width: "90%",margin:"auto", color: "#959595" }}>
                         Contract employment, also known as temporary or project-based employment,
                         involves hiring workers for a specific project or fixed period of time.
                         It offers flexibility for employers to meet short-term staffing needs.
@@ -112,7 +112,7 @@ const index = () => {
 
             </section>
             <section style={{ backgroundImage: "url(images/background/meeting2.png)",height:"60vh",padding:"50px",display:"flex",justifyContent:"center" }}>
-                <div style={{color:"white",margin:"auto",width:"60%",textAlign:"center",fontSize:"25px",lineHeight:"30px"}}>
+                <div data-aos="fade-up" style={{color:"white",margin:"auto",width:"60%",textAlign:"center",fontSize:"25px",lineHeight:"30px"}}>
                 Contract employment provides employers with flexibility in managing their workforce and
                  allows them to quickly and easily fill specific roles or projects. Contract workers benefit 
                  from the opportunity to gain experience, work on specific projects, and earn income. However,

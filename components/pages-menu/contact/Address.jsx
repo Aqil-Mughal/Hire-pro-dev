@@ -11,7 +11,7 @@ const Address = () => {
 
   const qrValue = 'https://www.aamanto.com/';
   return (
-    <div style={{ width: "100%", display: "flex", }} className='qr_box'>
+    <div style={{ width: "100%", display: "flex", }} className='qr_box' data-aos="fade-right">
       <div style={{ width: "60%",}}>
         <div className="address-icon">
         </div>
@@ -43,7 +43,7 @@ const Address = () => {
         </div>
 
       </div>
-      <div style={{ width: "20%", display: "flex", justifyContent: "center", margin: "auto", }}  >
+      <div style={{ width: "20%", display: "flex", justifyContent: "center", margin: "auto", }} data-aos="fade-left" >
         <QRCode style={{ width: "100%", height: "1", }} value={qrValue} />
       </div>
     </div>

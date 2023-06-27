@@ -5,14 +5,14 @@ const Block3 = () => {
     <section className="recruiter-section">
       <div className="outer-box">
         <div className="image-column">
-          <figure className="image">
-            <img src="images/resource/image6.png" style={{borderRadius:"none"}} alt="resource about" />
+          <figure className="image" >
+            <img src="images/resource/image6.png" data-aos="fade-left" style={{borderRadius:"none"}} alt="resource about" />
           </figure>
         </div>
         {/* End image-column */}
 
         <div className="content-column">
-          <div className="inner-column" data-aos="fade-up">
+          <div className="inner-column" data-aos="fade-left">
             <div className="sec-title">
               <h2>Need a job?</h2>
               <div className="text">

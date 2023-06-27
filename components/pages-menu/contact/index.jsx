@@ -32,9 +32,9 @@ const index = () => {
       <section className="contact-section" style={{ border: "1px", backgroundColor: "#CFDBE4", }}>
         <div className="auto-container" >
           {/* <!-- Contact Form --> */}
-          <div className="contact-form default-form" style={{ backgroundColor: "white",borderRight: `300px solid ${borderColor}`, }} >
+          <div className="contact-form default-form" data-aos="fade-up" style={{ backgroundColor: "white",borderRight: `300px solid ${borderColor}`, }} >
             <div style={{ display: "flex", width: "135%" }}>
-              <div style={{ width: "100%", }}>
+              <div style={{ width: "100%", }}data-aos="fade-up">
                 <h3 style={{ fontSize: "40px" }}>Get In <span style={{ color: "#1F9747" }}>Touch</span></h3>
                 <p style={{ fontSize: "10px", color: "#202124", lineHeight: "20px" }}>
                   Enim tempor eget pharetra facilisis sed maecenas adipiscing.
@@ -50,8 +50,8 @@ const index = () => {
                 {/* End .row */}
               </div>
 
-              <div style={{ width: "100%", marginLeft: "3%" }}>
-                <div className="map-outer" style={{ height: "115vh", position: "absolute", width: "25%", marginTop: "1%" }} >
+              <div style={{ width: "100%", marginLeft: "3%" }} >
+                <div data-aos="fade-up" className="map-outer" style={{ height: "115vh", position: "absolute", width: "25%", marginTop: "1%" }} >
                   <MapBox />
                 </div>
               </div>

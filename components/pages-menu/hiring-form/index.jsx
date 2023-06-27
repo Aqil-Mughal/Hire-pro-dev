@@ -4,9 +4,9 @@ import { ADD_JOB } from "../../../data/graphQL/Mutations"
 import { Modal, Button } from "react-bootstrap"
 import Link from "next/link"
 import CallToAction from "../../call-to-action/CallToAction"
-import DefaulHeader from "../../header/DefaulHeader"
+import Header from "../../home-9/Header"
 import MobileMenu from "../../header/MobileMenu"
-import FooterDefault from "../../footer/common-footer";
+import JpFooter from "../../footer/Jpfooter"
 
 const index = () => {
 
@@ -116,7 +116,7 @@ const index = () => {
     return (
         <>
             <span className="header-span"></span>
-            <DefaulHeader />
+            <Header />
             <MobileMenu />
 
             <div>
@@ -126,10 +126,10 @@ const index = () => {
                     </div>
                 </div>
 
-                <section className="contact-section">
-                    <div className="auto-container">
+                <section className="contact-section" >
+                    <div className="auto-container" style={{ backgroundColor: "#ECFFF2",borderRadius:"20px" }}>
 
-                        <div className="hiring-form default-form">
+                        <div className="hiring-form default-form" >
                             <form>
                                 <div className="row">
                                     <div className="form-group col-lg-12 col-md-12 col-sm-12">
@@ -148,16 +148,19 @@ const index = () => {
                                             className="username"
                                             placeholder="Company Name *"
                                             required
+                                            style={{ backgroundColor: "#ECFFF2", borderColor: "#959595" }}
                                         />
+
                                     </div>
 
                                     <div className="col-lg-4 col-md-12 col-sm-12 form-group">
                                         <label>Company Logo *</label>
                                         <div className="cus-file-input-container">
-                                            <input type="text" className="username cus-file-input" value={formData.companyLogo ? formData.companyLogo.name : ''} readOnly placeholder="No file selected" />
+                                            <input type="text" className="username cus-file-input" value={formData.companyLogo ? formData.companyLogo.name : ''} readOnly placeholder="No file selected" style={{ backgroundColor: "#ECFFF2", borderColor: "#959595" }} />
                                             <label htmlFor="file" className="theme-btn btn-style-one cus-file-input-button">Browse</label>
                                             <input type="file" id="file" name="companyLogo" className="cus-file-input-hidden"
                                                 onChange={(e) => setFormData({ ...formData, companyLogo: e.target.files[0] })}
+                                                
                                             />
                                         </div>
                                     </div>
@@ -172,6 +175,7 @@ const index = () => {
                                             className="username"
                                             placeholder="Phone No. *"
                                             required
+                                            style={{ backgroundColor: "#ECFFF2", borderColor: "#959595" }}
                                         />
                                     </div>
 
@@ -185,6 +189,7 @@ const index = () => {
                                             className="username"
                                             placeholder="Website Link"
                                             required
+                                            style={{ backgroundColor: "#ECFFF2", borderColor: "#959595" }}
                                         />
                                     </div>
 
@@ -198,6 +203,7 @@ const index = () => {
                                             className="username"
                                             placeholder="Address *"
                                             required
+                                            style={{ backgroundColor: "#ECFFF2", borderColor: "#959595" }}
                                         />
                                     </div>
 
@@ -211,6 +217,7 @@ const index = () => {
                                             className="username"
                                             placeholder="City *"
                                             required
+                                            style={{ backgroundColor: "#ECFFF2", borderColor: "#959595" }}
                                         />
                                     </div>
 
@@ -224,6 +231,7 @@ const index = () => {
                                             className="username"
                                             placeholder="Province / State *"
                                             required
+                                            style={{ backgroundColor: "#ECFFF2", borderColor: "#959595" }}
                                         />
                                     </div>
 
@@ -237,6 +245,7 @@ const index = () => {
                                             className="username"
                                             placeholder="Country *"
                                             required
+                                            style={{ backgroundColor: "#ECFFF2", borderColor: "#959595" }}
                                         />
                                     </div>
 
@@ -250,6 +259,7 @@ const index = () => {
                                             className="username"
                                             placeholder="Postal Code / Zip Code *"
                                             required
+                                            style={{ backgroundColor: "#ECFFF2", borderColor: "#959595" }}
                                         />
                                     </div>
 
@@ -267,6 +277,7 @@ const index = () => {
                                             className="username"
                                             placeholder="First Name *"
                                             required
+                                            style={{ backgroundColor: "#ECFFF2", borderColor: "#959595" }}
                                         />
                                     </div>
 
@@ -280,6 +291,7 @@ const index = () => {
                                             className="username"
                                             placeholder="Middle Name"
                                             required
+                                            style={{ backgroundColor: "#ECFFF2", borderColor: "#959595" }}
                                         />
                                     </div>
 
@@ -293,6 +305,7 @@ const index = () => {
                                             className="username"
                                             placeholder="Last Name *"
                                             required
+                                            style={{ backgroundColor: "#ECFFF2", borderColor: "#959595" }}
                                         />
                                     </div>
 
@@ -306,6 +319,7 @@ const index = () => {
                                             className="username"
                                             placeholder="Email *"
                                             required
+                                            style={{ backgroundColor: "#ECFFF2", borderColor: "#959595" }}
                                         />
                                     </div>
 
@@ -319,6 +333,7 @@ const index = () => {
                                             className="username"
                                             placeholder="Contact Number *"
                                             required
+                                            style={{ backgroundColor: "#ECFFF2", borderColor: "#959595" }}
                                         />
                                     </div>
 
@@ -332,6 +347,7 @@ const index = () => {
                                             className="username"
                                             placeholder="Job Title *"
                                             required
+                                            style={{ backgroundColor: "#ECFFF2", borderColor: "#959595" }}
                                         />
                                     </div>
 
@@ -343,6 +359,7 @@ const index = () => {
                                             defaultValue={formData.jobType}
                                             onChange={(e) => setFormData({ ...formData, [e.target.name]: e.target.value })}
                                             required
+                                            style={{ backgroundColor: "#ECFFF2", borderColor: "#959595" }}
                                         >
                                             <option value="">Select a Job Sector</option>
                                             <option value="General Labour">General Labour</option>
@@ -381,16 +398,18 @@ const index = () => {
                                             className="username"
                                             placeholder="How many Employees do you need? *"
                                             required
+                                            style={{ backgroundColor: "#ECFFF2", borderColor: "#959595" }}
                                         />
                                     </div>
 
                                     <div className="col-lg-4 col-md-12 col-sm-12 form-group">
                                         <label>Upload Criteria File *</label>
                                         <div className="cus-file-input-container">
-                                            <input type="text" className="username cus-file-input" value={formData.jobDescriptionFile ? formData.jobDescriptionFile.name : ''} readOnly placeholder="No file selected" />
+                                            <input type="text" className="username cus-file-input" value={formData.jobDescriptionFile ? formData.jobDescriptionFile.name : ''} readOnly placeholder="No file selected" style={{ backgroundColor: "#ECFFF2", borderColor: "#959595" }} />
                                             <label htmlFor="file2" className="theme-btn btn-style-one cus-file-input-button">Browse</label>
                                             <input type="file" id="file2" name="jobDescriptionFile" className="cus-file-input-hidden"
                                                 onChange={(e) => setFormData({ ...formData, jobDescriptionFile: e.target.files[0] })}
+                                                style={{ backgroundColor: "#ECFFF2", borderColor: "#959595" }}
                                             />
                                         </div>
                                     </div>
@@ -402,6 +421,7 @@ const index = () => {
                                             value={formData.additionalDetails}
                                             onChange={(e) => setFormData({ ...formData, [e.target.name]: e.target.value })}
                                             placeholder="Write your additional notes..."
+                                            style={{ backgroundColor: "#ECFFF2", borderColor: "#959595" }}
                                         ></textarea>
                                     </div>
 
@@ -419,6 +439,7 @@ const index = () => {
                                                     className="theme-btn btn-style-ten cus-mr-10"
                                                     id="submit"
                                                     onClick={handleFormClear}
+                                                    style={{ backgroundColor: "#ECFFF2", borderColor: "#1F9747" ,color:"#1F9747"}}
                                                 >
                                                     Clear
                                                 </button>
@@ -439,8 +460,11 @@ const index = () => {
                         </div>
                     </div>
                 </section>
+                <div style={{ margin: "5%" }}>
+                    <CallToAction />
+                </div>
 
-                <CallToAction />
+
 
 
 
@@ -488,7 +512,7 @@ const index = () => {
 
             </div>
 
-            <FooterDefault footerStyle="alternate5" />
+            <JpFooter />
         </>
     )
 }

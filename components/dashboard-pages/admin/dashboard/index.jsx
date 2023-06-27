@@ -41,7 +41,8 @@ const Index = () => {
   const options = {
     // title: "My Daily Activities",
     colors: ['#d397e7', '#e89371', '#209747', '#f0c274'],
-    backgroundColor: '#ffffff'
+    backgroundColor: '#ffffff',
+    pieHole: 0.5,
   }
 
   return (

@@ -8,12 +8,22 @@ import MenuToggler from "../../MenuToggler";
 import { TagsInput } from "react-tag-input-component";
 import { useMutation } from "@apollo/client";
 import { ADD_AGENCY_JOB_POST } from "../../../../data/graphQL/Mutations";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import SuccessConfirmation from "../../popups/SuccessConfirmation"
 import ErrorConfirmation from "../../popups/ErrorConfirmation"
+import { useRouter } from "next/router";
 
 
 const Index = () => {
+
+  const { push } = useRouter()
+  useEffect(() => {
+    if (!localStorage.getItem('token')) push('/login')
+  }, [push])
+
+  if (!localStorage.getItem('token')) {
+    return null
+  }
 
   const initialDate = new Date().toISOString().split("T");
 

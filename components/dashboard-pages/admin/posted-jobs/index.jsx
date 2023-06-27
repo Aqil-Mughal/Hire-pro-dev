@@ -8,13 +8,23 @@ import MenuToggler from "../../MenuToggler";
 import { useQuery, useLazyQuery, useMutation } from "@apollo/client";
 import { GET_AGENCY_JOB_POST_BY_AGENCY_JOB_POST_ID, GET_ALL_AGENCY_JOB_POSTS, UPDATE_AGENCY_JOB_POST_PRIORITY_BY_AGENCY_JOB_POST_ID } from "../../../../data/graphQL/Queries";
 import { DELETE_AGENCY_JOB_POST } from "../../../../data/graphQL/Mutations";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Button, Modal } from 'react-bootstrap';
 import { Grid, GridColumn as Column } from "@progress/kendo-react-grid";
 import { process } from "@progress/kendo-data-query";
 import { formatDate, formatDate1, formatTimeFromDB, validateEmptyToDash } from "../../../utils/utils";
+import { useRouter } from "next/router";
 
 const Index = () => {
+
+  const { push } = useRouter()
+  useEffect(() => {
+    if (!localStorage.getItem('token')) push('/login')
+  }, [push])
+
+  if (!localStorage.getItem('token')) {
+    return null
+  }
 
   //API starts here
   const [openViewModal, setOpenViewModal] = useState(false)

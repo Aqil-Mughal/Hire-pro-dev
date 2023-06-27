@@ -2,13 +2,12 @@ import Link from "next/link";
 import LoginWithSocial from "./LoginWithSocial";
 import { Modal, Button } from "react-bootstrap";
 import { useRouter } from "next/router";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useLazyQuery } from "@apollo/client";
 import { LOGIN } from "../../../../data/graphQL/Queries";
 
 const FormContent = () => {
 
-  const { push } = useRouter()
   const [openErrorModal, setOpenErrorModal] = useState(false)
   const [formData, setFormData] = useState({
     email: "",
@@ -45,7 +44,7 @@ const FormContent = () => {
 
       {/* <!--Login Form--> */}
       <form method="post">
-        <div className="form-group">
+        <div className="form-group pt-4">
           <label>Email *</label>
           <input
             type="text"

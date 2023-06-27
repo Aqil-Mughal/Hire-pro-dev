@@ -6,14 +6,24 @@ import BreadCrumb from "../../BreadCrumb";
 import CopyrightFooter from "../../CopyrightFooter";
 import MenuToggler from "../../MenuToggler";
 import { useQuery } from "@apollo/client";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { CANDIDATES_WITH_JOB_LINK } from "../../../../data/graphQL/Queries";
 import { Grid, GridColumn as Column } from "@progress/kendo-react-grid";
 import { process } from "@progress/kendo-data-query";
 import { formatDate1 } from "../../../utils/utils";
+import { useRouter } from "next/router";
 
 
 const Index = () => {
+
+  const { push } = useRouter()
+  useEffect(() => {
+    if (!localStorage.getItem('token')) push('/login')
+  }, [push])
+
+  if (!localStorage.getItem('token')) {
+    return null
+  }
 
   //API starts here 
 

@@ -9,11 +9,21 @@ import { useQuery } from "@apollo/client";
 import { Grid, GridColumn as Column } from "@progress/kendo-react-grid";
 import { process } from "@progress/kendo-data-query";
 import { CANDIDATES_WITHOUT_JOB_LINK } from "../../../../data/graphQL/Queries";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { formatDate1 } from "../../../utils/utils";
+import { useRouter } from "next/router";
 
 
 const Index = () => {
+
+  const { push } = useRouter()
+  useEffect(() => {
+    if (!localStorage.getItem('token')) push('/login')
+  }, [push])
+
+  if (!localStorage.getItem('token')) {
+    return null
+  }
 
   //API Stars here
 

@@ -31,7 +31,7 @@ const index = () => {
     jobByJobInfo.refetch({
       jobTitle: titleState,
       location: locationState,
-      distance: rangeState,
+      distance: parseInt(rangeState),
       jobSector: jobSectorState,
     }).finally(() => {
       setBtnLoading(false)

@@ -23,7 +23,7 @@ const FormContent = () => {
         return
       } else {
         localStorage.setItem("token", data.signin)
-        push("/employers-dashboard/dashboard")
+        push("/admin/dashboard")
       }
     },
     onError(error) {

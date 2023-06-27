@@ -95,7 +95,7 @@ const Index = () => {
                     }}
                     navigatable={true}
                   >
-                    <Column field="candidate_id" title="ID" filterable={false} width={60} />
+                    <Column field="candidate_id" title="ID" filterable={false} width={100} />
                     <Column field="created_at" title="Added Date" width={150} />
                     <Column field="name" title="Name" />
                     <Column field="email" title="Email" />

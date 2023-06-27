@@ -29,3 +29,8 @@ export const DELETE_AGENCY_JOB_POST = gql`
   }
 `
 
+export const APPLY_FOR_JOB_WITH_JOB_ID = gql`
+mutation ApplyJob($agencyJobPostJobId: Int!, $firstName: String!, $lastName: String!, $email: String!, $phoneNumber: String!, $city: String!, $jobSector: String!, $resume: Upload!, $middleName: String) {
+  ApplyJob(agency_job_post_job_id: $agencyJobPostJobId, first_name: $firstName, last_name: $lastName, email: $email, phone_number: $phoneNumber, city: $city, job_sector: $jobSector, resume: $resume, middle_name: $middleName)
+}
+`

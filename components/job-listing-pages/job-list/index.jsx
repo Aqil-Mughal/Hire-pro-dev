@@ -175,7 +175,7 @@ const index = () => {
                             <div className="inner-box">
                               <div className="content p-0">
                                 <h4>
-                                  <Link href={`/job-single-v4/1`}>
+                                  <Link href={`/job-details/${item.agency_job_post_job_id}`}>
                                     {item.job_title}
                                   </Link>
                                 </h4>

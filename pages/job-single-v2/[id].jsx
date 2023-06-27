@@ -189,7 +189,7 @@ const JobSingleDynamicV2 = () => {
                     <div className="widget-content">
                       <div className="company-title">
                         <div className="company-logo">
-                          <img src={company.logo} alt="resource" />
+                          <img src={company?.logo} alt="resource" />
                         </div>
                         <h5 className="company-name">{company.company}</h5>
                         <a href="#" className="profile-link">

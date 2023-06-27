@@ -53,7 +53,7 @@ const Header = () => {
                 Login / Register
               </a> */}
               <Link
-                href="/employers-dashboard/post-jobs"
+                href="/admin/dashboard"
                 className="theme-btn btn-style-five"
                 style={{
                   color: "white", backgroundColor: " #1F9747",

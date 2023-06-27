@@ -380,11 +380,11 @@ export const shopItems = [
 export const jobSeekersItems = [
     {
         name: "Search Jobs",
-        routePath: "/search-jobs",
+        routePath: "/job-list",
     },
     {
         name: "Submit Your Resume",
-        routePath: "/submit-your-resume",
+        routePath: "/submit-resume",
     }
 ]
 

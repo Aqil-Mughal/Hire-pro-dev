@@ -1014,6 +1014,7 @@ Banner Section Ten
 .banner-section-ten .banner-carousel .owl-stage {
   height: 100%;
 }
+
 .banner-section-ten .banner-carousel {
   position: absolute;
   left: 0;
@@ -1076,15 +1077,18 @@ Banner Section Ten
 .banner-section-ten .job-search-form {
   padding: 20px 20px;
   padding-left: 30px;
+
   @media (max-width: 1366px) {
     padding-left: 0;
   }
 }
+
 .banner-section-ten .banner-carousel div {
   @media (max-width: 767px) {
     height: 100%;
   }
 }
+
 .banner-section-ten .job-search-form .form-group label {
   position: absolute;
   left: 15px;
@@ -1490,10 +1494,12 @@ Banner Section
 
 .job-search-form .form-group.category {
   border-left: 1px solid #e6e6e6;
+
   @media (max-width: 991px) {
     border: none;
   }
 }
+
 .job-search-form .form-group:first-child {
   border-right: 1px solid #e6e6e6;
 }
@@ -1738,4 +1744,76 @@ Work Section
   width: 100%;
   min-width: auto;
   height: 60px;
+}
+
+
+
+
+// Custom
+// Hiring form
+.hiring-form-banner-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+  background-image: url(../../images/custom/hiring-form-banner.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.hiring-form-banner-content {
+  text-align: center;
+  font-size: 40px;
+}
+
+.hiring-form-banner-content h1 {
+  color: #ffffff;
+  font-size: 50px;
+  border-bottom: 5px solid;
+  padding-bottom: 8px;
+}
+
+.contact-section .hiring-form {
+  margin: 0 auto;
+}
+
+.hiring-form h4 {
+  font-weight: 600;
+}
+
+//Login
+.login-logo-centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #ffffff;
+}
+
+// Common
+.cus-file-input-container {
+  display: flex;
+}
+
+.cus-file-input {
+  flex: 70%;
+  margin-right: 15px;
+}
+
+.cus-file-input-button {
+  flex: 30%;
+  cursor: pointer;
+}
+
+.cus-file-input-hidden {
+  display: none;
+}
+
+.cus-mr-10 {
+  margin-right: 10px;
+}
+
+.cus-pb-30 {
+  padding-bottom: 30px;
 }

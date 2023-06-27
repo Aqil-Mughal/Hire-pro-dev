@@ -22,8 +22,8 @@ const Testimonial4 = () => {
     <>
       <Slider {...settings} arrows={false}>
         {testimonilaContent.slice(3, 6).map((item) => (
-          <div className="testimonial-block" key={item.id}>
-            <div className="inner-box">
+          <div className="testimonial-block" key={item.id} >
+            <div className="inner-box" style={{height:"42vh"}}>
               <h4 className="title">{item.feedback}</h4>
               <div className="text">{item.feedbackText}</div>
               <div className="info-box">

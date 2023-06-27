@@ -57,7 +57,7 @@ const index = () => {
               {/* En .sect-title */}
 
               <div className="outer-box">
-                <JobFeatured7 />
+                <JobFeatured7  />
               </div>
               {/* En outer box */}
             </div>

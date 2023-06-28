@@ -99,7 +99,7 @@ const index = () => {
                           padding: 0,
                           border: "none",
                           paddingLeft: "30px",
-                          height: 60
+                          height: 60,
                         }),
                       }}
                     />

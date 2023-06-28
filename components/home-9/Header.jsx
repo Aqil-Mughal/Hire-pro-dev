@@ -31,7 +31,7 @@ const Header = () => {
             <div className="logo-box">
               <div className="logo" >
                 <Link href="/home">
-                  <img src="/images/icons/OBJECTS.png" style={{ width: "70%", height: "6vh", }} />
+                  <img href="/home" src="/images/icons/OBJECTS.png" style={{ width: "70%", height: "6vh", }} />
                 </Link>
               </div>
             </div>
@@ -55,19 +55,8 @@ const Header = () => {
               <Link
                 href="/admin/dashboard"
                 className="theme-btn btn-style-five"
-                style={{
-                  color: "white", backgroundColor: " #1F9747",
-                  'hovered':{
-                    // backgroundColor:"black"
-                    backgroundColor:" red",
-                    boxShadow:" 0 2px 4px rgba(0, 0, 0, 0.2)",
-                    // fontSize:"30px"
-                  }
-
-                }}
               >
-               Admin
-                
+               Admin               
               </Link>
             </div>
           </div>

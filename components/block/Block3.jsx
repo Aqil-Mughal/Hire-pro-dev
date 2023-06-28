@@ -6,7 +6,7 @@ const Block3 = () => {
       <div className="outer-box">
         <div className="image-column">
           <figure className="image" >
-            <img src="images/resource/image6.png" data-aos="fade-left" style={{borderRadius:"none"}} alt="resource about" />
+            <img src="images/resource/image6.png" data-aos="fade-left" style={{ borderRadius: "none" }} alt="resource about" />
           </figure>
         </div>
         {/* End image-column */}
@@ -16,10 +16,10 @@ const Block3 = () => {
             <div className="sec-title">
               <h2>Need a job?</h2>
               <div className="text">
-              Staffing website is committed to delivering exceptional 
-              business solutions that enable our clients to achieve rapid and seamless growth. 
+                Staffing website is committed to delivering exceptional
+                business solutions that enable our clients to achieve rapid and seamless growth.
               </div>
-              <Link href="/login" className="theme-btn btn-style-one" style={{backgroundColor:"#1F9747"}}>
+              <Link href="/login" className="theme-btn btn-style-one">
                 Check New Job
               </Link>
             </div>

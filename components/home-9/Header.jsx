@@ -54,7 +54,16 @@ const Header = () => {
               </a> */}
               <Link
                 href="/admin/dashboard"
-                className="theme-btn btn-style-five"
+                className="theme-btn btn-style-one"
+                // style={{
+                  // color: "white", backgroundColor: " #1F9747",
+                  // 'hovered':{
+                    // backgroundColor:"black"
+                    // backgroundColor:" red",
+                    // boxShadow:" 0 2px 4px rgba(0, 0, 0, 0.2)",
+                    // fontSize:"30px"
+                  // }
+                // }}
               >
                Admin               
               </Link>

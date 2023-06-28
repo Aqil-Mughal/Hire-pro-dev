@@ -65,8 +65,7 @@ const JobFeatured7 = () => {
               </div>
               <Link
                 href={`/job-details/${row.agency_job_post_job_id}`}
-                className="theme-btn btn-style-five"
-                
+                className="theme-btn btn-style-one"
               >
                 Apply Now
               </Link>

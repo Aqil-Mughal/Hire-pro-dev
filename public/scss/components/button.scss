@@ -46,7 +46,7 @@ Buttons Styles
   text-align: center;
   white-space: nowrap;
   color: #202124;
-  background-color: var(--primary-2nd-color);
+  background-color:#1F9747;
   font-size: 15px;
   line-height: 20px;
   border-radius: 8px;
@@ -55,8 +55,8 @@ Buttons Styles
 }
 
 .btn-style-two:hover {
-  color: #202124;
-  background-color: white;
+  // color: #202124;
+  background-color: #197E3B;
 }
 
 /* Btn Style Three */
@@ -64,8 +64,8 @@ Buttons Styles
   position: relative;
   text-align: center;
   white-space: nowrap;
-  color: #747474;
-  background-color: #e2eaf8;
+  color:#1F9747;
+  background-color:white;
   font-size: 15px;
   line-height: 20px;
   border-radius: 8px;
@@ -74,8 +74,7 @@ Buttons Styles
 }
 
 .btn-style-three:hover {
-  color: #1F9747;
-  background-color: "#197E3B";
+  background-color: #9abca5;
 }
 
 /* Btn Style Four */
@@ -102,19 +101,16 @@ Buttons Styles
   position: relative;
   text-align: center;
   white-space: nowrap;
-  color: var(--primary-color);
-  border: 1px solid #ffffff;
+  color: white;
+  background-color: #1F9747;
   line-height: 20px;
   border-radius: 8px;
   font-weight: 400;
   padding: 14px 35px;
 }
 
-.btn-style-five:hover {
-  // border:5px solid red;
-  color: #1F9747;
-  background-color: "#197E3B";
-
+btn-style-five:hover {
+  background-color: #197E3B;
 }
 
 /* Btn Style Six */
@@ -154,17 +150,21 @@ Buttons Styles
   background-color: #e2eaf8;
 }
 
-/* Btn Style Seven */
+/* Btn Style eight */
 
-.btn-style-eight {
+.btn-style-eight{
   position: relative;
   text-align: center;
   white-space: nowrap;
-  color: var(--primary-color);
+  color: white;
+  background-color: #1F9747;
   line-height: 20px;
   border-radius: 8px;
   font-weight: 400;
   padding: 15px 35px;
+}
+.btn-style-eight:hover {
+  background-color: #197E3B;
 }
 
 

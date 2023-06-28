@@ -21,7 +21,7 @@ module.exports = [
     id: 3,
     feedback: "Quick Hiring",
     feedbackText: `We have been partnering with Job Port for our recruitment needs for several years, and they have consistently delivered outstanding results. 
-    Their dedicated team consistently provides us with high-quality candidates.`,
+    Their dedicated team consistently provide candidates`,
     avatar: "/images/resource/image9.png",
     name: "Ashley Jenkins",
     designation: "Designer",
@@ -39,7 +39,7 @@ module.exports = [
     id: 5,
     feedback: "Quick Hiring!",
     feedbackText: `We have been partnering with Job Port for our recruitment needs for several years, and they have consistently delivered outstanding results. 
-    Their dedicated team consistently provides us with high-quality candidates.`,
+    Their dedicated team consistently provide candidates.`,
     avatar: "/images/resource/image9.png",
     name: "Brooklyn Simmons",
     designation: "Web Developer",
@@ -68,7 +68,7 @@ module.exports = [
     id: 8,
     feedback: "Quick Hiring",
     feedbackText: `We have been partnering with Job Port for our recruitment needs for several years, and they have consistently delivered outstanding results. 
-    Their dedicated team consistently provides us with high-quality candidates.`,
+    Their dedicated team consistently provide candidates.`,
     avatar: "/images/resource/image9.jpg",
     name: "Ashley Jenkins",
     designation: "Designer",

@@ -40,7 +40,7 @@ const AboutBlock = () => {
             </div>
 
             <div className="content">
-              <h4  style={{color:"#1F9747"}}className="title">{item.title}</h4>
+              <h4  style={{color:"#1F9747"}} className="title">{item.title}</h4>
               <p className="text" style={{fontSize:"14px",lineHeight:"19px"}}>{item.text}</p>
             </div>
           </div>

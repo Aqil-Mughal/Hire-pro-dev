@@ -36,7 +36,7 @@ const index = () => {
 
       <Hero9 />
       {/* <!-- End Hero Section --> */}
-      <section className="registeration-banners">
+      <section className="registeration-banners" style={{marginTop:"2%"}}>
         <div className="auto-container">
           <div className="row" data-aos="fade-up">
             <RegBanner2 />

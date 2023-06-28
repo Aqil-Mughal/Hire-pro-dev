@@ -50,7 +50,7 @@ const index = ({ footerStyle = "" }) => {
                       </Link>
                     </li>
                     <li>
-                      <Link href="employment/" style={{ color: "white" }}>
+                      <Link href="/faq" style={{ color: "white" }}>
                         Services
                       </Link>
                     </li>

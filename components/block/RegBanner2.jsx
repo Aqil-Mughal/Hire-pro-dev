@@ -5,7 +5,7 @@ const RegBanner2 = () => {
     {
       id: 1,
       name: "Employers",
-      text: ` Employers actively evaluate and identify the most suitable candidate to meet the organization's needs success.`,
+      text: ` Employers actively evaluate and identify the most suitable candidate to meet the organization's `,
       avatar: "images/resource/employ.png",
       bannerClass: "banner-style-one",
       buttonLabel: "Hiring Form",
@@ -16,7 +16,7 @@ const RegBanner2 = () => {
     {
       id: 2,
       name: "Candidate",
-      text: `Candidates have the opportunity to secure a job by successfully navigating the hiring process and impressing the employer.`,
+      text: `Candidates have the opportunity to secure a job by successfully navigating the hiring process`,
       avatar: "images/resource/candidate.png",
       bannerClass: "banner-style-two",
       buttonLabel: "Submit Resume",
@@ -34,11 +34,11 @@ const RegBanner2 = () => {
           key={item.id}
          
         >
-          <div className="inner-box" style={{ backgroundColor: item.backgroundColor,height:"40vh" }}>
+          <div className="inner-box" style={{ backgroundColor: item.backgroundColor, }}>
             <div className="content" data-aos="fade-right">
               <h3>{item.name}</h3>
               <p>{item.text}</p>
-              <Link href={item.buttonLink} className="theme-btn btn-style-five"style={{ color: item.buttonFontColor }} data-aos="fade-up-right">
+              <Link href={item.buttonLink} className="theme-btn btn-style-five" style={{ color: item.buttonFontColor,}} data-aos="fade-up-right">
               {item.buttonLabel}
               </Link>
               

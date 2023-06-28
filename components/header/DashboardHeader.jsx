@@ -26,9 +26,8 @@ const DashboardHeader = () => {
     return (
         // <!-- Main Header-->
         <header
-            className={`main-header header-shaddow  ${
-                navbar ? "fixed-header " : ""
-            }`}
+            className={`main-header header-shaddow  ${navbar ? "fixed-header " : ""
+                }`}
         >
             <div className="container-fluid">
                 {/* <!-- Main box --> */}
@@ -50,12 +49,12 @@ const DashboardHeader = () => {
                         </div>
                         {/* End .logo-box */}
 
-                        <HeaderNavContent />
                         {/* <!-- Main Menu End--> */}
                     </div>
                     {/* End .nav-outer */}
 
                     <div className="outer-box">
+                        <HeaderNavContent />
                         {/* <button className="menu-btn">
                             <span className="count">1</span>
                             <span className="icon la la-heart-o"></span>
@@ -88,14 +87,13 @@ const DashboardHeader = () => {
                             <ul className="dropdown-menu">
                                 {employerMenuData.map((item) => (
                                     <li
-                                        className={`${
-                                            isActiveLink(
-                                                item.routePath,
-                                                router.asPath
-                                            )
+                                        className={`${isActiveLink(
+                                            item.routePath,
+                                            router.asPath
+                                        )
                                                 ? "active"
                                                 : ""
-                                        } mb-1`}
+                                            } mb-1`}
                                         key={item.id}
                                     >
                                         <Link href={item.routePath}>

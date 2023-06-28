@@ -28,7 +28,7 @@ const JobFeatured7 = () => {
       ) : (
         getJobs?.data?.AllAgencyJobPosts.map((row, key) => (
           <div className="job-block-five" key={key}>
-            <div className="inner-box">
+            <div className="inner-box" >
               <div className="content">
                 {/* <span className="company-logo">
                 <img src={item.logo} alt="item brand" />
@@ -65,7 +65,7 @@ const JobFeatured7 = () => {
               </div>
               <Link
                 href={`/job-details/${row.agency_job_post_job_id}`}
-                className="theme-btn btn-style-three"
+                className="theme-btn btn-style-five"
                 
               >
                 Apply Now

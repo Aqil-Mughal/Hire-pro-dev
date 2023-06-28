@@ -51,7 +51,7 @@ const index = () => {
               </div>
 
               <div style={{ width: "100%", marginLeft: "3%" }} >
-                <div data-aos="fade-up" className="map-outer" style={{ height: "115vh", position: "absolute", width: "25%", marginTop: "1%" }} >
+                <div data-aos="fade-up" className="map-outer" style={{ height: "50vh", position: "absolute", width: "60%", marginTop: "1%" }} >
                   <MapBox />
                 </div>
               </div>

@@ -1828,7 +1828,7 @@ Work Section
 }
 
 .cus-file-input-hidden {
-  
+
   display: none;
 }
 
@@ -1840,11 +1840,26 @@ Work Section
   padding-bottom: 30px;
 }
 
-.cus-clr-green{
+.cus-clr-green {
   color: #1F9747;
 }
 
-.cus-bgg-cw{
+.cus-bgg-cw {
   background-color: #1F9747 !important;
   color: #ffffff;
+}
+
+.cus-default-form {
+  background-color: white;
+  border-right: 300px solid #1F9747;
+}
+
+.cus-map {
+  width: 100%;
+  margin-left: 3%;
+}
+
+.cus-default-form-inner {
+  display: flex;
+  width: 135%;
 }

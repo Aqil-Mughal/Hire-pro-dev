@@ -25,7 +25,7 @@ const Block4 = () => {
                  we guarantee to deliver exceptional talent to fuel your organization's success. 
                  Find your ideal talent with us today.
               </div>
-              <Link href="/job-list-v4" className="theme-btn btn-style-one" style={{backgroundColor:"#1F9747"}}>
+              <Link href="/job-list-v4" className="theme-btn btn-style-one">
                 Check New Talent
               </Link>
             </div>

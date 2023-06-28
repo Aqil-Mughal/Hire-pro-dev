@@ -31,7 +31,7 @@ const Header = () => {
             <div className="logo-box">
               <div className="logo" >
                 <Link href="/home">
-                  <img href="/home" src="/images/icons/OBJECTS.png" style={{ width: "70%", height: "6vh", }} />
+                  <img href="/home" src="/images/icons/OBJECTS.png" style={{ width:"48px", height: "30px", }} />
                 </Link>
               </div>
             </div>

@@ -1791,6 +1791,27 @@ Work Section
   color: #ffffff;
 }
 
+//Modal Table
+.jp-table {
+  border-collapse: separate;
+  border-spacing: 0 10px;
+}
+
+.jp-table tr {
+  margin-bottom: 20px;
+  border-color: transparent;
+}
+
+.jp-table th {
+  width: 30%;
+}
+
+.jp-table td {
+  width: 70%;
+  background-color: #CFFFDC;
+  color: #959595;
+}
+
 // Common
 .cus-file-input-container {
   display: flex;
@@ -1817,4 +1838,13 @@ Work Section
 
 .cus-pb-30 {
   padding-bottom: 30px;
+}
+
+.cus-clr-green{
+  color: #1F9747;
+}
+
+.cus-bgg-cw{
+  background-color: #1F9747 !important;
+  color: #ffffff;
 }

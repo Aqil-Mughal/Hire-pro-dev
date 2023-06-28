@@ -477,7 +477,7 @@ const index = () => {
                     show={openErrorModal}
                     className="jp-modal"
                 >
-                    <Modal.Header id="contained-modal-title-vcenter1">
+                    <Modal.Header id="contained-modal-title-vcenter1" className="cus-bgg-cw">
                         <h3>Message</h3>
                     </Modal.Header>
                     <Modal.Body>Please fill out all the mandatory fields.</Modal.Body>
@@ -498,7 +498,7 @@ const index = () => {
                     show={openSuccessModal}
                     className="jp-modal"
                 >
-                    <Modal.Header id="contained-modal-title-vcenter1">
+                    <Modal.Header id="contained-modal-title-vcenter1" className="cus-bgg-cw">
                         <h3>Success</h3>
                     </Modal.Header>
                     <Modal.Body>Congratulations! Your form has been submitted.</Modal.Body>

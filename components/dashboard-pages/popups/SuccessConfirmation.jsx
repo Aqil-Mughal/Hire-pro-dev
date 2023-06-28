@@ -10,7 +10,7 @@ const SuccessConfirmation = ({ show, heading, text, onClickSuccess }) => {
       show={show}
       className='jp-modal'
     >
-      <Modal.Header id="contained-modal-title-vcenter1">
+      <Modal.Header id="contained-modal-title-vcenter1" className="cus-bgg-cw">
         <h3>{heading}</h3>
       </Modal.Header>
       <Modal.Body>

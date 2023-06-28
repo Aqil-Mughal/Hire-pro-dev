@@ -8,29 +8,41 @@ import MenuToggler from "../../MenuToggler";
 import Chart from "react-google-charts";
 import { useQuery } from "@apollo/client";
 import { CANDIDATES_WITHOUT_JOB_LINK_COUNT, CANDIDATES_WITH_JOB_LINK_COUNT, GET_ALL_AGENCY_JOB_POST_COUNT, GET_ALL_JOBS_COUNT } from "../../../../data/graphQL/Queries";
+import { useRouter } from "next/router";
+import { useEffect } from "react";
 
 
 const Index = () => {
 
-    //API
-    const jobSeekerCount = useQuery(CANDIDATES_WITHOUT_JOB_LINK_COUNT)
-    const candidateCount = useQuery(CANDIDATES_WITH_JOB_LINK_COUNT)
-    const empoyerApplicationsCount = useQuery(GET_ALL_JOBS_COUNT)
-    const postedJobCount = useQuery(GET_ALL_AGENCY_JOB_POST_COUNT)
+  const { push } = useRouter()
+  useEffect(() => {
+    if (!localStorage.getItem('token')) push('/login')
+  }, [push])
 
-  
-    const data = [
-      ["Type", "Number"],
-      ["Employer Applications", empoyerApplicationsCount?.data?.TotalNumberOfJobs],
-      ["Posted Jobs", postedJobCount?.data?.TotalNumberOfAgencyPostedJobs],
-      ["Candidate Applications", candidateCount?.data?.TotalNumberOfCandidatesWithJobLink],
-      ["Job Seeker Applications", jobSeekerCount?.data?.TotalNumberOfCandidatesWithoutJobLink],
-    ]
+  if (!localStorage.getItem('token')) {
+    return null
+  }
+
+  //API
+  const jobSeekerCount = useQuery(CANDIDATES_WITHOUT_JOB_LINK_COUNT)
+  const candidateCount = useQuery(CANDIDATES_WITH_JOB_LINK_COUNT)
+  const empoyerApplicationsCount = useQuery(GET_ALL_JOBS_COUNT)
+  const postedJobCount = useQuery(GET_ALL_AGENCY_JOB_POST_COUNT)
+
+
+  const data = [
+    ["Type", "Number"],
+    ["New Posted Jobs", postedJobCount?.data?.TotalNumberOfAgencyPostedJobs],
+    ["Employer Applications", empoyerApplicationsCount?.data?.TotalNumberOfJobs],
+    ["Candidate Applications", candidateCount?.data?.TotalNumberOfCandidatesWithJobLink],
+    ["Job Seeker Applications", jobSeekerCount?.data?.TotalNumberOfCandidatesWithoutJobLink],
+  ]
 
   const options = {
     // title: "My Daily Activities",
-    colors: ['#28a745', '#dc3545', '#17a2b8', '#343a40'],
-    backgroundColor: '#f5f5f5'
+    colors: ['#d397e7', '#e89371', '#209747', '#f0c274'],
+    backgroundColor: '#ffffff',
+    pieHole: 0.5,
   }
 
   return (

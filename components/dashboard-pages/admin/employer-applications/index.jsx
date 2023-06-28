@@ -16,9 +16,20 @@ import { DELETE_JOBS_BY_JOB_ID } from "../../../../data/graphQL/Mutations";
 import { Grid, GridColumn } from "@progress/kendo-react-grid";
 import { process } from "@progress/kendo-data-query";
 import { formatDate1, ImgorPdf, validateEmptyToDash } from '../../../utils/utils'
+import { useRouter } from "next/router";
 
 
 const Index = () => {
+
+  const { push } = useRouter()
+  useEffect(() => {
+    if (!localStorage.getItem('token')) push('/login')
+  }, [push])
+
+  if (!localStorage.getItem('token')) {
+    return null
+  }
+
 
   const [itemsPerPage, setItemsPerPage] = useState(10)
   const [page, setPage] = useState(0)
@@ -158,7 +169,7 @@ const Index = () => {
               show={openViewModal}
               className='jp-modal'
             >
-              <Modal.Header id="contained-modal-title-vcenter">
+              <Modal.Header id="contained-modal-title-vcenter" className="cus-bgg-cw">
                 <h3>Employer Application Details</h3>
               </Modal.Header>
               <Modal.Body>

@@ -335,7 +335,7 @@ const HeaderNavContent = () => {
                     <li>
                         <Link
                         // onClick={handleClick}
-                        href="/home"
+                        href="/"
                          >Home</Link>
                         
                     </li>

@@ -1,4 +1,4 @@
-// export const homeItems = [
+export const homeItems = [
 //     // {
 //     //     id: 1,
 //     //     items: [
@@ -91,7 +91,7 @@
 //     //         },
 //     //     ],
 //     // },
-// ];
+];
 
 // export const findJobItems = [
 //     {
